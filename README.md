@@ -16,7 +16,7 @@
 
 **Diogo Silva — 22605781**
 
-**Colega 4 — Por definir**
+**Rafael Guimaraes — 22604812**
 
 # Tema do Projeto
 
