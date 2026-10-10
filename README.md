@@ -1,14 +1,14 @@
 🐾 PetCare — Programação Web (Cliente)
 
-#Projeto académico desenvolvido no âmbito da unidade curricular de Programação Web — Cliente.
+# Projeto académico desenvolvido no âmbito da unidade curricular de Programação Web — Cliente.
 
-##Informações do Projeto
+## Informações do Projeto
 
-**##Instituição: ISLA Gaia**
-**##Unidade Curricular: Programação Web — Cliente (15791)**
-**##Docente: José Augusto de Araújo Monteiro**
+**## Instituição: ISLA Gaia**
+**## Unidade Curricular: Programação Web — Cliente (15791)**
+**## Docente: José Augusto de Araújo Monteiro**
 
-##Elementos do Grupo
+## Elementos do Grupo
 
 **Diogo Barbosa — 22604476**
 
@@ -20,15 +20,15 @@
 
 **#Tema do Projeto**
 
-##PetCare — Cuidados e Serviços para Animais de Estimação
+## PetCare — Cuidados e Serviços para Animais de Estimação
 
-##Desenvolvimento de um website responsivo e acessível dedicado à prestação de serviços de apoio e bem-estar animal.
+## Desenvolvimento de um website responsivo e acessível dedicado à prestação de serviços de apoio e bem-estar animal.
 
-##Público-Alvo
+## Público-Alvo
 
-####Donos de animais de estimação (cães e gatos) que procuram serviços profissionais de alojamento, higiene, passeios e cuidados personalizados.
+#### Donos de animais de estimação (cães e gatos) que procuram serviços profissionais de alojamento, higiene, passeios e cuidados personalizados.
 
-##Estrutura do Projeto (E1)
+## Estrutura do Projeto (E1)
 
 **index.html — Página inicial**
 
