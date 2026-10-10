@@ -4,9 +4,9 @@
 
 ## Informações do Projeto
 
-## ** Instituição: ISLA Gaia**
-## **Unidade Curricular: Programação Web — Cliente (15791)**
-## ** Docente: José Augusto de Araújo Monteiro**
+## Instituição: ISLA Gaia
+## Unidade Curricular: Programação Web — Cliente (15791)
+## Docente: José Augusto de Araújo Monteiro
 
 ## Elementos do Grupo
 
@@ -22,7 +22,7 @@
 
 ## PetCare — Cuidados e Serviços para Animais de Estimação
 
-## Desenvolvimento de um website responsivo e acessível dedicado à prestação de serviços de apoio e bem-estar animal.
+### Desenvolvimento de um website responsivo e acessível dedicado à prestação de serviços de apoio e bem-estar animal.
 
 ## Público-Alvo
 
