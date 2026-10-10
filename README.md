@@ -1,6 +1,6 @@
 # 🐾 PetCare — Programação Web (Cliente)
 
-# Projeto académico desenvolvido no âmbito da unidade curricular de Programação Web — Cliente.
+## Projeto académico desenvolvido no âmbito da unidade curricular de Programação Web — Cliente.
 
 ## Informações do Projeto
 
