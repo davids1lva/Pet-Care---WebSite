@@ -1,12 +1,12 @@
-🐾 PetCare — Programação Web (Cliente)
+# 🐾 PetCare — Programação Web (Cliente)
 
 # Projeto académico desenvolvido no âmbito da unidade curricular de Programação Web — Cliente.
 
 ## Informações do Projeto
 
-**## Instituição: ISLA Gaia**
-**## Unidade Curricular: Programação Web — Cliente (15791)**
-**## Docente: José Augusto de Araújo Monteiro**
+## ** Instituição: ISLA Gaia**
+## **Unidade Curricular: Programação Web — Cliente (15791)**
+## ** Docente: José Augusto de Araújo Monteiro**
 
 ## Elementos do Grupo
 
