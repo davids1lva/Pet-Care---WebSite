@@ -49,10 +49,4 @@
 
 **Evidências sugeridas:** `docs/validacao-index.png`, `docs/validacao-servicos.png`, `docs/validacao-contactos.png` (ou nomes reais dos ficheiros).
 
-## Entrega e identificação da versão
-
-- [X] Confirmar que todos os ficheiros e evidências estão na branch a etiquetar.
-- [X] Criar a tag Git `E1` associada ao commit correto.
-- [X] Registar o hash do commit da tag E1: `A preencher`.
-- [X] Submeter na plataforma da UC o URL do repositório, conforme o enunciado.
 
