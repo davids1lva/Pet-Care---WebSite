@@ -18,7 +18,7 @@
 
 **Colega 4 — Por definir**
 
-**#Tema do Projeto**
+# Tema do Projeto
 
 ## PetCare — Cuidados e Serviços para Animais de Estimação
 
