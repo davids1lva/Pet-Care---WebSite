@@ -1,41 +1,41 @@
 🐾 PetCare — Programação Web (Cliente)
 
-Projeto académico desenvolvido no âmbito da unidade curricular de Programação Web — Cliente.
+#Projeto académico desenvolvido no âmbito da unidade curricular de Programação Web — Cliente.
 
-Informações do Projeto
+##Informações do Projeto
 
-Instituição: ISLA Gaia
-Unidade Curricular: Programação Web — Cliente (15791)
-Docente: José Augusto de Araújo Monteiro
+**##Instituição: ISLA Gaia**
+**##Unidade Curricular: Programação Web — Cliente (15791)**
+**##Docente: José Augusto de Araújo Monteiro**
 
-Elementos do Grupo
+##Elementos do Grupo
 
-Diogo Barbosa — 22604476
+**Diogo Barbosa — 22604476**
 
-David Silva — 22606172
+**David Silva — 22606172**
 
-Diogo Silva — 22605781
+**Diogo Silva — 22605781**
 
-Colega 4 — Por definir
+**Colega 4 — Por definir**
 
-Tema do Projeto
+**#Tema do Projeto**
 
-PetCare — Cuidados e Serviços para Animais de Estimação
+##PetCare — Cuidados e Serviços para Animais de Estimação
 
-Desenvolvimento de um website responsivo e acessível dedicado à prestação de serviços de apoio e bem-estar animal.
+##Desenvolvimento de um website responsivo e acessível dedicado à prestação de serviços de apoio e bem-estar animal.
 
-Público-Alvo
+##Público-Alvo
 
-Donos de animais de estimação (cães e gatos) que procuram serviços profissionais de alojamento, higiene, passeios e cuidados personalizados.
+####Donos de animais de estimação (cães e gatos) que procuram serviços profissionais de alojamento, higiene, passeios e cuidados personalizados.
 
-Estrutura do Projeto (E1)
+##Estrutura do Projeto (E1)
 
-index.html — Página inicial
+**index.html — Página inicial**
 
-servicos.html — Serviços disponíveis e tabela
+**servicos.html — Serviços disponíveis e tabela**
 
-contactos.html — Contactos e formulário
+**contactos.html — Contactos e formulário**
 
-imagens/ — Fotografias utilizadas no website
+**imagens/ — Fotografias utilizadas no website**
 
-docs/ — Sitemap e documentação
+**docs/ — Sitemap e documentação**
