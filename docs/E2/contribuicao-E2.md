@@ -40,7 +40,9 @@ As contribuições abaixo correspondem à distribuição de trabalho indicada pe
 - **Diogo Silva:** atualizou o ficheiro README.md
 - **David Silva:** preparou os wireframes da E2.
 - **David Silva:** preparou e atualizou os sitemaps da E2.
+- **David Silva:** Atualização do ficheiro index.html e contactos.html.
 - **Diogo Barbosa:** efetuou as verificações do código HTML das páginas e preparou as respetivas evidências de validação.
+- **Diogo Barbosa:** Atualização do ficheiro servicos.html
 
 ## Responsabilidades pelas metas da E2
 
