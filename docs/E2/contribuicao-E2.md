@@ -50,6 +50,6 @@ As contribuições abaixo correspondem à distribuição de trabalho indicada pe
 |---|---|
 | Planeamento, sitemap e wireframes | Rafael Guimarães: documento de planeamento (`planeamento-E2.md`); David Silva: sitemap e wireframes. |
 | Criação das novas páginas HTML | Rafael Guimarães (`acessibilidade.html`), David Silva (`galeria.html`), Diogo Silva (`sobre.html`) e Diogo Barbosa (`artigo.html`). |
-| Verificação e validação do código HTML | David Silva; consultar as capturas de ecrã da validação W3C. |
+| Verificação e validação do código HTML | Diogo Barbosa; consultar as capturas de ecrã da validação W3C. |
 | Atualização das páginas já existentes e do formulário | Responsáveis a confirmar com o grupo. |
 | Registo dos commits e tag `E2` | Confirmar no histórico do repositório GitHub. |
