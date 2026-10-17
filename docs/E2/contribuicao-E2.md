@@ -40,7 +40,7 @@ As contribuições abaixo correspondem à distribuição de trabalho indicada pe
 - **Diogo Silva:** atualizou o ficheiro README.md
 - **David Silva:** preparou os wireframes da E2.
 - **David Silva:** preparou e atualizou os sitemaps da E2.
-- **David Silva:** efetuou as verificações do código HTML das páginas e preparou as respetivas evidências de validação.
+- **Diogo Barbosa:** efetuou as verificações do código HTML das páginas e preparou as respetivas evidências de validação.
 
 ## Responsabilidades pelas metas da E2
 
@@ -51,10 +51,3 @@ As contribuições abaixo correspondem à distribuição de trabalho indicada pe
 | Verificação e validação do código HTML | David Silva; consultar as capturas de ecrã da validação W3C. |
 | Atualização das páginas já existentes e do formulário | Responsáveis a confirmar com o grupo. |
 | Registo dos commits e tag `E2` | Confirmar no histórico do repositório GitHub. |
-
-## Notas antes da entrega
-
-- [ ] Preencher o número de estudante de Rafael Guimarães.
-- [ ] Confirmar no histórico Git os commits relativos às contribuições indicadas.
-- [ ] Identificar, se necessário, os responsáveis pela atualização de `index.html`, `servicos.html`, `contactos.html`.
-- [ ] Confirmar que as evidências e a tag `E2` estão publicadas no repositório.
