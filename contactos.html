@@ -9,15 +9,20 @@
 <body>
 
   <header>
-    <nav>
+    <nav aria-label="Navegação principal">
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
         <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="artigo.html">Artigo</a></li>
+        <li><a href="acessibilidade.html">Acessibilidade</a></li>
       </ul>
     </nav>
   </header>
-    <main>
+
+  <main>
     <section>
       <h1>Fale Connosco</h1>
       <p>Estamos disponíveis para responder a todas as suas dúvidas e agendar os serviços do seu animal.</p>
@@ -25,21 +30,27 @@
 
     <section>
       <h2>Informações de Contacto</h2>
+
       <p><strong>Morada:</strong> Rua de Exemplo, n.º 123, 4400-000 Vila Nova de Gaia</p>
       <p><strong>Telefone:</strong> +351 220 000 000</p>
       <p><strong>E-mail:</strong> contacto@petcare-exemplo.pt</p>
-      
+
       <h3>Horário de Funcionamento</h3>
       <ul>
         <li>Segunda a Sexta-feira: 08h00 - 20h00</li>
         <li>Sábados e Domingos: 09h00 - 18h00</li>
       </ul>
 
-      <img src="imagens/localizacao.jpg" alt="Mapa ilustrativo da localização das instalações da PetCare em Gaia">
+      <img src="imagens/localizacao.jpg"
+           alt="Mapa ilustrativo da localização das instalações da PetCare em Gaia"
+           width="600" height="400">
     </section>
-<section>
+
+    <section>
       <h2>Enviar Mensagem</h2>
+
       <form action="#" method="post">
+
         <p>
           <label for="nome">Nome Completo:</label><br>
           <input type="text" id="nome" name="nome" required>
@@ -52,28 +63,60 @@
 
         <p>
           <label for="telefone">Telefone:</label><br>
-          <input type="tel" id="telefone" name="telefone" required>
-        </p>
-
-<p>
-          <label for="assunto">Assunto:</label><br>
-          <input type="text" id="assunto" name="assunto" required>
+          <input type="tel" id="telefone" name="telefone"
+                 pattern="[0-9]{9}"
+                 title="Introduza um número de telefone com 9 algarismos."
+                 required>
         </p>
 
         <p>
+          <label for="servico">Serviço Pretendido:</label><br>
+          <select id="servico" name="servico" required>
+            <option value="">-- Selecione --</option>
+            <option value="hotel">Hotel para Animais</option>
+            <option value="banho">Banho e Tosquia</option>
+            <option value="passeio">Passeios</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="data">Data Pretendida:</label><br>
+          <input type="date" id="data" name="data"
+                 min="2026-10-22" required>
+        </p>
+
+       
+        <p>
           <label for="mensagem">Mensagem:</label><br>
-          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          <textarea id="mensagem" name="mensagem"
+                    rows="7" cols="60"
+                    maxlength="1000"
+                    style="resize: none;"
+                    required></textarea>
+        </p>
+
+
+        <p>
+          <input type="checkbox" id="termos" name="termos" required>
+          <label for="termos">
+            Confirmo que pretendo enviar este pedido de contacto à PetCare.
+          </label>
         </p>
 
         <p>
           <button type="submit">Enviar Mensagem</button>
         </p>
+
       </form>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
+    <p>
+      <a href="contactos.html">Contactos</a> |
+      <a href="acessibilidade.html">Declaração de Acessibilidade</a>
+    </p>
   </footer>
 
 </body>
