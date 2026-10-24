@@ -1,0 +1,16 @@
+/* PetCare — Etapa 3: folha de estilos base.
+   As regras estão agrupadas por secções.
+   Os layouts responsivos, tabelas e formulários completos serão tratados nas etapas seguintes. */
+
+/* 1. Paleta de cores e tipografia */
+:root {
+  --cor-texto: #1C2730;
+  --cor-principal: #17324D;
+  --cor-verde: #176B50;
+  --cor-terra: #89520B;
+  --cor-secundaria: #44545F;
+  --cor-branco: #FFFFFF;
+  --cor-fundo: #F5F8F6;
+  --cor-suave: #E3ECE8;
+  font-family: Arial, Helvetica, sans-serif;
+}
