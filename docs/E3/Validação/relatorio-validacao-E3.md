@@ -12,12 +12,12 @@
 | Página | Erros W3C | Evidência (captura) |
 |---|---|---|
 | `index.html` | 0 | ([Ver print](valida%C3%A7%C3%A3o%20-%20index.html.png)) |
-| `servicos.html` | 0 | A acrescentar |
-| `contactos.html` | 0 | A acrescentar |
-| `galeria.html` | 0 | A acrescentar |
-| `sobre.html` | 0 | A acrescentar |
-| `artigo.html` | 0 | A acrescentar |
-| `acessibilidade.html` | 0 | A acrescentar |
+| `servicos.html` | 0 | ([Ver print](valida%C3%A7%C3%A3o%20-%20servicos.html.png)) |
+| `contactos.html` | 0 | ([Ver print](valida%C3%A7%C3%A3o%20-%20contactos.html.png)) |
+| `galeria.html` | 0 | ([Ver print](valida%C3%A7%C3%A3o%20-%20galeria.html.png)) |
+| `sobre.html` | 0 | ([Ver print](valida%C3%A7%C3%A3o%20-%20sobre.html.png)) |
+| `artigo.html` | 0 | ([Ver print](valida%C3%A7%C3%A3o%20-%20artigo.html.png)) |
+| `acessibilidade.html` | 0 | ([Ver print](valida%C3%A7%C3%A3o%20-%20acessibilidade.html.png)) |
 
 ## Registo CSS
 
