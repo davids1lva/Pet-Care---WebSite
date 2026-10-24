@@ -107,3 +107,21 @@ blockquote {
   background-color: var(--cor-suave);
   color: var(--cor-texto);
 }
+/* 5. Rodapé */
+body > footer {
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+}
+
+body > footer a {
+  color: var(--cor-branco);
+}
+
+body > footer a:hover {
+  color: #D7F4E4;
+}
+
+/* 6. Comportamento já existente na E2, agora sem CSS em linha */
+textarea {
+  resize: none;
+}
