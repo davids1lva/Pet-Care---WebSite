@@ -23,7 +23,7 @@
 
 | Ficheiro | Erros W3C CSS | Evidência (captura) |
 |---|---|---|
-| `style.css` | 0 | [Ver print](Validação/validação - style.css.png) |
+| `style.css` | 0 | ([Ver print](valida%C3%A7%C3%A3o%20-%20style.css.png)) |
 
 ## Verificações locais (não substituem W3C)
 
