@@ -11,7 +11,7 @@
 
 | Página | Erros W3C | Evidência (captura) |
 |---|---|---|
-| `index.html` | 0 | A acrescentar |
+| `index.html` | 0 | ([Ver print](valida%C3%A7%C3%A3o%20-%20index.html.png)) |
 | `servicos.html` | 0 | A acrescentar |
 | `contactos.html` | 0 | A acrescentar |
 | `galeria.html` | 0 | A acrescentar |
