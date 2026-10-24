@@ -63,3 +63,47 @@ a {
 a:hover {
   color: var(--cor-principal);
 }
+/* 3. Cabeçalho e navegação */
+body > header {
+  background-color: var(--cor-suave);
+  color: var(--cor-principal);
+}
+
+nav[aria-label="Navegação principal"] {
+  color: var(--cor-principal);
+}
+
+nav[aria-label="Navegação principal"] ul {
+  list-style-type: square;
+}
+
+nav[aria-label="Navegação principal"] li {
+  color: var(--cor-verde);
+}
+
+nav[aria-label="Navegação principal"] a {
+  color: var(--cor-principal);
+  font-weight: bold;
+}
+
+nav[aria-label="Navegação principal"] a:hover {
+  color: var(--cor-verde);
+}
+
+/* 4. Imagens, legendas e testemunhos */
+img {
+  height: auto;
+}
+
+figure {
+  color: var(--cor-texto);
+}
+
+figcaption {
+  color: var(--cor-secundaria);
+}
+
+blockquote {
+  background-color: var(--cor-suave);
+  color: var(--cor-texto);
+}
