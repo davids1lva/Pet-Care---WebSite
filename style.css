@@ -136,3 +136,71 @@ th, td {
     text-align: left;
     border: 1px solid var(--cor-secundaria);
 }
+
+th {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--cor-suave);
+}
+
+form {
+    max-width: 720px;
+    padding: 1.5rem;
+    border: 1px solid var(--cor-suave);
+    background-color: var(--cor-branco);
+}
+
+form p {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input:not([type="checkbox"]), select, textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.65rem;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 4px;
+    font: inherit;
+    color: var(--cor-texto);
+    background-color: var(--cor-branco);
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    padding: 0.7rem 1.3rem;
+    border: 2px solid var(--cor-principal);
+    border-radius: 4px;
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-verde);
+    border-color: var(--cor-verde);
+}
+
+details {
+    padding: 1rem;
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-branco);
+    margin-bottom: 1rem;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
