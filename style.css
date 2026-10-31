@@ -65,3 +65,74 @@ textarea {
 body > header, body > footer {
     padding: 1rem 1.5rem;
 }
+
+main > section, main > article, main > article > section {
+    margin-bottom: 2rem;
+}
+
+section, article {
+    padding: 0.5rem 0;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+p, ul, ol, blockquote, figure {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+nav[aria-label="Navegação principal"] ul {
+    list-style-type: square;
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+nav[aria-label="Navegação principal"] li {
+    color: var(--cor-verde);
+    margin-bottom: 0.25rem;
+}
+
+figure {
+    color: var(--cor-texto);
+    padding: 1rem;
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-suave);
+}
+
+figcaption {
+    color: var(--cor-secundaria);
+    margin-top: 0.5rem;
+}
+
+blockquote {
+    background-color: var(--cor-suave);
+    color: var(--cor-texto);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem;
+    border-left: 4px solid var(--cor-verde);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    background-color: var(--cor-branco);
+}
+
+/* 3. Tabelas e formulários */
+caption {
+    padding: 0.75rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--cor-principal);
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--cor-secundaria);
+}
