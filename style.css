@@ -681,3 +681,74 @@ main:not(.pagina-inicial) > section + section {
 .cartoes-acessibilidade {
     padding: 1.5rem !important;
 }
+.cartao-acessibilidade {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    min-height: 500px;
+    border: 1px solid var(--linha);
+    padding: 1.35rem;
+    margin: 1% 1.25%;
+    border-radius: 5px;
+}
+
+.pagina-artigo > article {
+    padding: 0;
+    margin: 0;
+}
+
+/* 8. Contactos, artigo e acessibilidade */
+.pagina-artigo .artigo-introducao {
+    border-bottom: 1px solid var(--linha);
+}
+
+.pagina-artigo > article > nav[aria-label="Índice do artigo"] {
+    background: #F1F8F5;
+}
+
+.pagina-artigo > article > section {
+    border-top: 1px solid var(--linha);
+}
+
+.pagina-artigo a {
+    overflow-wrap: anywhere;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] li {
+    display: inline-block;
+    margin: .15rem;
+}
+
+body > footer {
+    text-align: center;
+    background-color: #176B66;
+    color: #FFFFFF;
+    padding: 1.25rem;
+}
+
+.pagina-contactos .seccao-contacto > h2 {
+    margin: 0 0 1.3rem;
+}
+
+.pagina-contactos .contactos-linha {
+    font-size: 0;
+}
+
+.pagina-contactos .contactos-linha > .dados-contacto,
+.pagina-contactos .contactos-linha > .mapa-contactos {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 48%;
+    margin: 0;
+    border: 1px solid #9FBEB5;
+    border-radius: 4px;
+    background: #E8F4F0;
+    overflow: hidden;
+    font-size: 1rem;
+}
