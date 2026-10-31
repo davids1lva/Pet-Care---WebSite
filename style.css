@@ -414,3 +414,65 @@ body > header.cabecalho-site {
     padding: .55rem .66rem;
     white-space: nowrap;
 }
+.cabecalho-site nav[aria-label="Navegação principal"] a[aria-current="page"] {
+    background: #0D4945;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] a:hover,
+.cabecalho-site nav[aria-label="Navegação principal"] a:focus-visible {
+    color: #FFFFFF;
+    background: #0D4945;
+}
+
+main {
+    color: var(--cor-texto);
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1160px;
+    background: #fff;
+    padding: 0;
+    border-right: 1px solid var(--linha);
+    border-left: 1px solid var(--linha);
+}
+
+main:not(.pagina-inicial) > section:not(.cabecalho-pagina),
+main:not(.pagina-inicial) > .sobre-colunas,
+main.pagina-artigo > article > :not(.cabecalho-pagina) {
+    margin: 0;
+    padding: 2rem 2.5rem;
+}
+
+main:not(.pagina-inicial) > .cabecalho-pagina,
+main.pagina-artigo > article > .cabecalho-pagina {
+    margin: 0;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--agua-claro);
+    border-bottom: 1px solid var(--linha);
+    position: relative;
+}
+
+.cabecalho-pagina h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 0 auto 1rem;
+    max-width: 880px;
+    color: #173F3D;
+}
+
+.cabecalho-pagina p {
+    font-size: 1.1rem;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.marca-pata {
+    position: absolute;
+    right: 4%;
+    top: 25%;
+    font-size: 4rem;
+    opacity: .3;
+}
