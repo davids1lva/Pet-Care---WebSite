@@ -476,3 +476,78 @@ main.pagina-artigo > article > .cabecalho-pagina {
     font-size: 4rem;
     opacity: .3;
 }
+
+main:not(.pagina-inicial) h2 {
+    color: #174D48;
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+}
+
+main:not(.pagina-inicial) > section + section {
+    border-top: 1px solid var(--linha);
+}
+
+.seccao-servicos .cartao-servico {
+    border: 1px solid var(--linha);
+    background: #fff;
+    border-radius: 6px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.cartao-servico > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 26%;
+    max-width: 240px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cartao-servico > .texto-servico {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    padding-left: 1.4rem;
+}
+
+.cartao-servico h3 {
+    color: #173F3D;
+    margin-bottom: .4rem;
+}
+
+.seccao-tarifas {
+    background: #F1F8F5;
+}
+
+.seccao-tarifas table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.seccao-tarifas td, .seccao-tarifas th {
+    border: 1px solid #9FBEB5;
+}
+
+.grelha-galeria {
+    text-align: center;
+}
+
+.grelha-galeria figure {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin: 0 1.5% 2rem;
+}
+
+.grelha-galeria figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid var(--linha);
+}
