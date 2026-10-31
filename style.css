@@ -752,3 +752,74 @@ body > footer {
     overflow: hidden;
     font-size: 1rem;
 }
+
+.pagina-contactos .contactos-linha > .dados-contacto {
+    margin-right: 3%;
+    padding: 1rem;
+}
+
+.pagina-contactos .contactos-linha > .mapa-contactos {
+    padding: 0;
+    min-height: 320px;
+    text-align: center;
+}
+
+.pagina-contactos .mapa-contactos img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.pagina-contactos .contacto-item {
+    margin-bottom: 1.1rem;
+    font-size: 0;
+}
+
+.pagina-contactos .contacto-icone {
+    display: inline-block;
+    width: 12%;
+    vertical-align: top;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #176B66;
+}
+
+.pagina-contactos .contacto-item-texto {
+    display: inline-block;
+    width: 87%;
+    vertical-align: top;
+    font-size: 1rem;
+}
+
+.pagina-contactos .contacto-item-texto strong {
+    display: block;
+    margin-bottom: .25rem;
+    color: #173F3D;
+}
+
+.pagina-contactos .contacto-item-texto p {
+    margin: .1rem 0;
+}
+
+.pagina-contactos .contacto-item-texto ul {
+    margin: .3rem 0 0;
+    padding-left: 1.25rem;
+}
+
+.pagina-contactos .seccao-formulario form > p.campo-formulario {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.pagina-contactos .seccao-formulario form > p.campo-formulario:nth-of-type(even) {
+    margin-right: 0;
+}
+
+.pagina-contactos .seccao-formulario .campo-mensagem textarea {
+    width: 100%;
+}
+
+.pagina-contactos .seccao-formulario .campo-enviar {
+    text-align: center;
+}
