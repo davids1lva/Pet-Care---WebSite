@@ -274,3 +274,75 @@ main.pagina-inicial {
     font-size: 1.05rem;
     margin-bottom: 1.8rem;
 }
+.hero-pet .hero-acoes a {
+    display: inline-block;
+    margin: 0 0.7rem 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #176B66;
+    border-radius: 5px;
+    background-color: #176B66;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-pet .hero-acoes a + a {
+    background-color: #FFFFFF;
+    color: #176B66;
+}
+
+.hero-pet .hero-acoes a:hover,
+.hero-pet .hero-acoes a:focus-visible {
+    background-color: #0D4945;
+    border-color: #0D4945;
+    color: #FFFFFF;
+}
+
+.hero-pet .hero-imagem img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #D8E6E0;
+}
+
+.pagina-inicial h2 {
+    font-size: 1.8rem;
+    color: #174D48;
+}
+
+.pagina-inicial .testemunho-pet {
+    border: 1px solid #B6D3CB;
+    border-left: 5px solid #176B66;
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+    background: #FFFFFF;
+}
+
+.testemunho-pet p {
+    font-style: italic;
+}
+
+.testemunho-pet footer {
+    font-weight: bold;
+}
+
+body > footer a {
+    color: #FFFFFF;
+}
+
+:root {
+    --cor-texto: #1C2730;
+    --cor-principal: #173F3D;
+    --cor-verde: #176B66;
+    --cor-terra: #245A58;
+    --cor-secundaria: #245A58;
+    --cor-branco: #FFFFFF;
+    --cor-fundo: #F5F8F6;
+    --cor-suave: #E8F4F0;
+    font-family: Arial, Helvetica, sans-serif;
+    --agua: #176B66;
+    --agua-escuro: #0D4945;
+    --agua-claro: #E8F4F0;
+    --linha: #C9DDD6;
+}
