@@ -204,3 +204,73 @@ summary {
     font-weight: bold;
     cursor: pointer;
 }
+
+mark {
+    color: var(--cor-texto);
+    background-color: #F7E4A8;
+}
+
+:focus-visible {
+    outline: 3px solid #245A58;
+    outline-offset: 3px;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] a:hover {
+    background-color: var(--cor-suave);
+    color: var(--cor-principal);
+}
+
+/* 4. Elementos semânticos e foco */
+.cabecalho-site nav[aria-label="Navegação principal"] a:focus-visible {
+    outline: 3px solid var(--cor-branco);
+    outline-offset: 3px;
+}
+
+main.pagina-inicial {
+    max-width: 1140px;
+    padding: 0;
+    background: #FFFFFF;
+    border-left: 1px solid #D8E6E0;
+    border-right: 1px solid #D8E6E0;
+}
+
+.pagina-inicial > section {
+    margin: 0;
+    padding: 2.4rem 2.6rem;
+    border-bottom: 1px solid #D8E6E0;
+}
+
+.pagina-inicial > section:nth-child(odd) {
+    background: #F1F8F5;
+}
+
+.pagina-inicial .hero-pet {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hero-pet .hero-conteudo,
+.hero-pet .hero-imagem {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.hero-pet .hero-conteudo {
+    padding-right: 2rem;
+}
+
+/* 5. Página inicial e apresentação */
+.hero-pet h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    color: #173F3D;
+    margin-bottom: 1.5rem;
+}
+
+.hero-pet .hero-descricao {
+    font-size: 1.05rem;
+    margin-bottom: 1.8rem;
+}
