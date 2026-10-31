@@ -44,4 +44,3 @@ As contribuições podem ser documentadas através de:
 
 **Repositório:** https://github.com/davids1lva/Pet-Care---WebSite
 
-> **Nota:** Este registo descreve o trabalho colaborativo indicado pelo grupo. As capturas e os resultados de validação devem corresponder às verificações efetivamente realizadas e à versão final do website.
