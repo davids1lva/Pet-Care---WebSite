@@ -1,110 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça a lista completa de serviços da PetCare: hotel, banho e tosquia, passeios e alimentação.">
-  <link rel="stylesheet" href="style.css">
-  <title>Serviços - PetCare Vila Nova de Gaia</title>
-</head>
-<body>
-
-
-<header>
-  <nav aria-label="Navegação principal">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Conheça a lista completa de serviços da PetCare: hotel, banho e tosquia, passeios e alimentação." name="description"/>
+  <title>
+   Serviços - PetCare Vila Nova de Gaia
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="cabecalho-site">
+   <div class="identidade-site">
+    <p class="nome-site">
+     PetCare
+    </p>
+    <p class="subtitulo-site">
+     Cuidados e serviços para animais de estimação
+    </p>
+   </div>
+   <nav aria-label="Navegação principal">
     <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="sobre.html">Sobre Nós</a></li>
-      <li><a href="contactos.html">Contactos</a></li>
-      <li><a href="artigo.html">Artigo</a></li>
-      <li><a href="acessibilidade.html">Acessibilidade</a></li>
+     <li>
+      <a href="index.html">
+       Início
+      </a>
+     </li>
+     <li>
+      <a aria-current="page" href="servicos.html">
+       Serviços
+      </a>
+     </li>
+     <li>
+      <a href="galeria.html">
+       Galeria
+      </a>
+     </li>
+     <li>
+      <a href="sobre.html">
+       Sobre Nós
+      </a>
+     </li>
+     <li>
+      <a href="contactos.html">
+       Contactos
+      </a>
+     </li>
+     <li>
+      <a href="artigo.html">
+       Artigo
+      </a>
+     </li>
+     <li>
+      <a href="acessibilidade.html">
+       Acessibilidade
+      </a>
+     </li>
     </ul>
-  </nav>
-</header>
-
-
-  <main>
-    <section>
-      <h1>Os Nossos Serviços para Animais de Estimação</h1>
-      <p>Oferecemos um conjunto completo de soluções para garantir a saúde e a felicidade do seu animal.</p>
-    </section>
-
-    <section>
-      <h2>Serviços em Destaque</h2>
-      
-      <article>
-        <h3>Hotel para Cães</h3>
-        <img src="imagens/cao-hotel.jpg" alt="Cão da raça Retriever numa suite espaçosa do hotel" width="600" height="400">
-        <p>Quartos individuais climatizados, área de brincadeiras ao ar livre e vigilância constante.</p>
-      </article>
-
-      <article>
-        <h3>Hotel para Gatos</h3>
-        <img src="imagens/gato-hotel.jpg" alt="Gato num arranhador dentro do alojamento felino" width="600" height="400">
-        <p>Gateira tranquila, isolada do barulho dos cães, com estruturas de escalada e iluminação natural.</p>
-      </article>
-
-      <article>
-        <h3>Banho e Tosquia</h3>
-        <img src="imagens/banho-tosquia.jpg" alt="Profissional a dar banho num cão pequeno numa banheira própria" width="600" height="400">
-        <p>Higiene completa, corte de unhas, limpeza de ouvidos e tratamento de pelo adaptado a cada raça.</p>
-      </article>
-
-      <article>
-        <h3>Passeios e Exercício</h3>
-        <img src="imagens/passeios.jpg" alt="Dois cães a passear com trela junto a um parque urbano" width="600" height="400">
-        <p>Caminhadas ao ar livre com treinadores certificados para manter o seu patudo ativo e saudável.</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Resumo da Tabela de Tarifas</h2>
-      <table>
-        <caption>Lista e Preços Médios dos Serviços Prestados</caption>
-        <thead>
-          <tr>
-            <th scope="col">Serviço</th>
-            <th scope="col">Duração / Frequência</th>
-            <th scope="col">Preço Médio (&euro;)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Alojamento Cão</td>
-            <td>Diária (24h)</td>
-            <td>20,00 &euro;</td>
-          </tr>
-          <tr>
-            <td>Alojamento Gato</td>
-            <td>Diária (24h)</td>
-            <td>15,00 &euro;</td>
-          </tr>
-          <tr>
-            <td>Banho e Grooming</td>
-            <td>Por sessão</td>
-            <td>25,00 &euro;</td>
-          </tr>
-          <tr>
-            <td>Passeio Individual</td>
-            <td>45 minutos</td>
-            <td>10,00 &euro;</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+   </nav>
+  </header>
+  <main class="pagina-servicos">
+   <section class="cabecalho-pagina">
+    <h1>
+     Os Nossos Serviços para Animais de Estimação
+    </h1>
+    <p>
+     Oferecemos um conjunto completo de soluções para garantir a saúde e a felicidade do seu animal.
+    </p>
+    <span aria-hidden="true" class="marca-pata">
+     🐾
+    </span>
+   </section>
+   <section class="seccao-servicos">
+    <h2>
+     Serviços em Destaque
+    </h2>
+    <article class="cartao-servico">
+     <img alt="Cão da raça Retriever numa suite espaçosa do hotel" height="400" src="imagens/cao-hotel.jpg" width="600"/>
+     <div class="texto-servico">
+      <h3>
+       Hotel para Cães
+      </h3>
+      <p>
+       Quartos individuais climatizados, área de brincadeiras ao ar livre e vigilância constante.
+      </p>
+     </div>
+    </article>
+    <article class="cartao-servico">
+     <img alt="Gato num arranhador dentro do alojamento felino" height="400" src="imagens/gato-hotel.jpg" width="600"/>
+     <div class="texto-servico">
+      <h3>
+       Hotel para Gatos
+      </h3>
+      <p>
+       Gateira tranquila, isolada do barulho dos cães, com estruturas de escalada e iluminação natural.
+      </p>
+     </div>
+    </article>
+    <article class="cartao-servico">
+     <img alt="Profissional a dar banho num cão pequeno numa banheira própria" height="400" src="imagens/banho-tosquia.jpg" width="600"/>
+     <div class="texto-servico">
+      <h3>
+       Banho e Tosquia
+      </h3>
+      <p>
+       Higiene completa, corte de unhas, limpeza de ouvidos e tratamento de pelo adaptado a cada raça.
+      </p>
+     </div>
+    </article>
+    <article class="cartao-servico">
+     <img alt="Dois cães a passear com trela junto a um parque urbano" height="400" src="imagens/passeios.jpg" width="600"/>
+     <div class="texto-servico">
+      <h3>
+       Passeios e Exercício
+      </h3>
+      <p>
+       Caminhadas ao ar livre com treinadores certificados para manter o seu patudo ativo e saudável.
+      </p>
+     </div>
+    </article>
+   </section>
+   <section class="seccao-tarifas">
+    <h2>
+     Resumo da Tabela de Tarifas
+    </h2>
+    <table>
+     <caption>
+      Lista e Preços Médios dos Serviços Prestados
+     </caption>
+     <thead>
+      <tr>
+       <th scope="col">
+        Serviço
+       </th>
+       <th scope="col">
+        Duração / Frequência
+       </th>
+       <th scope="col">
+        Preço Médio (€)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        Alojamento Cão
+       </td>
+       <td>
+        Diária (24h)
+       </td>
+       <td>
+        20,00 €
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Alojamento Gato
+       </td>
+       <td>
+        Diária (24h)
+       </td>
+       <td>
+        15,00 €
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Banho e Grooming
+       </td>
+       <td>
+        Por sessão
+       </td>
+       <td>
+        25,00 €
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Passeio Individual
+       </td>
+       <td>
+        45 minutos
+       </td>
+       <td>
+        10,00 €
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <details>
+     <summary>
+      Os preços apresentados são definitivos?
+     </summary>
+     <p>
+      Não. Os valores são indicativos e podem variar conforme as necessidades de cada animal.
+     </p>
+    </details>
+   </section>
   </main>
-
-
-<footer>
-  <p>&copy; 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
-  <p>
-    <a href="contactos.html">Contactos</a> |
-    <a href="acessibilidade.html">Declaração de Acessibilidade</a>
-  </p>
-</footer>
-
-
-</body>
+  <footer>
+   <p>
+    © 2026 PetCare ISLA Gaia. Todos os direitos reservados.
+   </p>
+   <p>
+    <a href="contactos.html">
+     Contactos
+    </a>
+    |
+    <a href="acessibilidade.html">
+     Declaração de Acessibilidade
+    </a>
+   </p>
+  </footer>
+ </body>
 </html>
+
