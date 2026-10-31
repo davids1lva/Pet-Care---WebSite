@@ -551,3 +551,66 @@ main:not(.pagina-inicial) > section + section {
     border-radius: 5px;
     border: 1px solid var(--linha);
 }
+.grelha-galeria figcaption {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin: .75rem 0;
+}
+
+.equipa-cartoes {
+    text-align: center;
+}
+
+.cartao-equipa {
+    display: inline-block;
+    width: 31%;
+    margin: 0 .7% 1.25rem;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid var(--linha);
+    padding: .85rem;
+    margin: 0 .7% 1.25rem;
+    border-radius: 6px;
+    min-height: 220px;
+}
+
+/* 7. Serviços, galeria e equipa */
+.cartao-equipa > img {
+    display: inline-block;
+    width: 34%;
+    height: auto;
+    max-height: 145px;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 4px;
+}
+
+.cartao-equipa .equipa-descricao {
+    display: inline-block;
+    width: 63%;
+    padding-left: .7rem;
+    vertical-align: top;
+    font-size: .9rem;
+}
+
+.cartao-equipa h3 {
+    color: #173F3D;
+    font-size: 1.12rem;
+}
+
+.sobre-colunas > section {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    padding: .8rem;
+}
+
+.local-destaque {
+    border: 1px solid var(--linha);
+    background: #EAF5F1;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 1rem 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
