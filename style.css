@@ -346,3 +346,71 @@ body > footer a {
     --agua-claro: #E8F4F0;
     --linha: #C9DDD6;
 }
+body {
+    color: var(--cor-texto);
+    line-height: 1.6;
+    margin: 0;
+    background: #F5F8F6;
+}
+
+body > header.cabecalho-site {
+    text-align: right;
+    border-bottom: 4px solid #D6EAE5;
+    background: var(--agua);
+    color: #fff;
+    padding: 1.15rem max(1.25rem, calc((100% - 1160px)/2));
+}
+
+.cabecalho-site .identidade-site {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 22%;
+    min-width: 170px;
+}
+
+.cabecalho-site .nome-site {
+    margin: 0 0 0.35rem;
+    line-height: 1.2;
+    margin-bottom: 0.15rem;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.cabecalho-site .subtitulo-site {
+    margin: 0 0 1.5rem;
+    margin-bottom: 0;
+    color: #F0FFF9;
+    font-size: .78rem;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] {
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFFFFF;
+    text-align: right;
+    width: 77%;
+    min-width: 0;
+}
+
+/* 6. Paleta de cores e cabeçalho */
+.cabecalho-site nav[aria-label="Navegação principal"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 0.88rem;
+    border-radius: 6px;
+    background: transparent;
+    margin: 2px 0;
+    padding: .55rem .66rem;
+    white-space: nowrap;
+}
