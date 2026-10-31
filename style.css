@@ -1,127 +1,67 @@
-/* PetCare — Etapa 3: folha de estilos base.
-   As regras estão agrupadas por secções.
-  
 
-/* 1. Paleta de cores e tipografia */
-:root {
-  --cor-texto: #1C2730;
-  --cor-principal: #17324D;
-  --cor-verde: #176B50;
-  --cor-terra: #89520B;
-  --cor-secundaria: #44545F;
-  --cor-branco: #FFFFFF;
-  --cor-fundo: #F5F8F6;
-  --cor-suave: #E3ECE8;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* 2. Estilos gerais e texto */
-body {
-  color: var(--cor-texto);
-  background-color: var(--cor-fundo);
-  line-height: 1.6;
-}
+/* PetCare — E4: estilos consolidados por secção. */
+/* Mantém o modelo de caixa, a tabela, o formulário e o foco de teclado. */
+/* Flexbox, CSS Grid e media queries ficam para a E5. */
 
-main {
-  color: var(--cor-texto);
-}
-
-section {
-  color: inherit;
-}
-
-article {
-  color: inherit;
-}
-
+/* 1. Tipografia e elementos base */
 h1 {
-  color: var(--cor-principal);
-  font-size: 2rem;
+    color: var(--cor-principal);
+    font-size: 2rem;
 }
 
 h2 {
-  color: var(--cor-verde);
-  font-size: 1.5rem;
+    color: var(--cor-verde);
+    font-size: 1.5rem;
 }
 
 h3 {
-  color: var(--cor-terra);
-  font-size: 1.25rem;
+    color: var(--cor-terra);
+    font-size: 1.25rem;
 }
 
 p {
-  font-size: 1rem;
-}
-
-li {
-  line-height: 1.6;
+    font-size: 1rem;
 }
 
 a {
-  color: var(--cor-verde);
+    color: var(--cor-verde);
 }
 
 a:hover {
-  color: var(--cor-principal);
+    color: var(--cor-principal);
 }
-/* 3. Cabeçalho e navegação */
+
 body > header {
-  background-color: var(--cor-suave);
-  color: var(--cor-principal);
+    background-color: var(--cor-suave);
+    color: var(--cor-principal);
 }
 
 nav[aria-label="Navegação principal"] {
-  color: var(--cor-principal);
-}
-
-nav[aria-label="Navegação principal"] ul {
-  list-style-type: square;
-}
-
-nav[aria-label="Navegação principal"] li {
-  color: var(--cor-verde);
+    color: var(--cor-principal);
 }
 
 nav[aria-label="Navegação principal"] a {
-  color: var(--cor-principal);
-  font-weight: bold;
+    color: var(--cor-principal);
+    font-weight: bold;
 }
 
 nav[aria-label="Navegação principal"] a:hover {
-  color: var(--cor-verde);
-}
-
-/* 4. Imagens, legendas e testemunhos */
-img {
-  height: auto;
-}
-
-figure {
-  color: var(--cor-texto);
-}
-
-figcaption {
-  color: var(--cor-secundaria);
-}
-
-blockquote {
-  background-color: var(--cor-suave);
-  color: var(--cor-texto);
-}
-/* 5. Rodapé */
-body > footer {
-  background-color: var(--cor-principal);
-  color: var(--cor-branco);
-}
-
-body > footer a {
-  color: var(--cor-branco);
+    color: var(--cor-verde);
 }
 
 body > footer a:hover {
-  color: #D7F4E4;
+    color: #D7F4E4;
 }
 
-/* 6. Comportamento já existente na E2, agora sem CSS em linha */
 textarea {
-  resize: none;
+    resize: none;
+}
+
+/* 2. Modelo de caixa e espaçamentos */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body > header, body > footer {
+    padding: 1rem 1.5rem;
 }
