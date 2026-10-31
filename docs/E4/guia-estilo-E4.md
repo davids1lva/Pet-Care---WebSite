@@ -42,7 +42,7 @@ Rácio calculado segundo a luminância relativa sRGB (WCAG), `(L_claro + 0,05) /
 | Títulos secundários | `#174D48` | `#FFFFFF` | **9,58:1** | Sim | Sim |
 | Texto geral no fundo exterior | `#1C2730` | `#F5F8F6` | **14,21:1** | Sim | Sim |
 | Ligações gerais em branco | `#176B50` | `#FFFFFF` | **6,45:1** | Sim | Sim |
-| Títulos de terceiro nível | `#173F3D` | `#FFFFFF` | **6,41:1** | Sim | Sim |
+| Títulos de terceiro nível | `#173F3D` | `#FFFFFF` | **11,57:1** | Sim | Sim |
 
 Os pares documentados cumprem os limiares para texto normal e grande. **Isto não equivale a uma auditoria integral WCAG:** é necessário também verificar outros estados e combinações de cores, como contornos, controlos e sobreposições.
 
