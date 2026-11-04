@@ -23,7 +23,7 @@ Estas são as **seis referências já indicadas no `artigo.html` recebido**, nã
 1. W3C — *Web Content Accessibility Guidelines (WCAG) 2.2*: https://www.w3.org/TR/WCAG22/
 2. W3C WAI — *Introduction to Web Accessibility*: https://www.w3.org/WAI/fundamentals/accessibility-intro/
 3. W3C WAI — *Evaluating Web Accessibility Overview*: https://www.w3.org/WAI/test-evaluate/
-4. W3C WAI — *How to Meet WCAG (Quick Reference)*: https://www.w3.org/WAI/WCAG22/quickref/
-5. W3C WAI — *WAI Resources*: https://www.w3.org/WAI/resources/
+4. EXAME - Como a IA dá um toque na acessibilidade digital. https://exame.com/tecnologia/como-a-ia-da-um-toque-na-acessibilidade-digital/
+5. Softway. Acessibilidade digital: como a Inteligência Artificial está a tornar a Web mais inclusiva. https://www.softway.pt/blog/acessibilidade-digital-como-a-inteligencia-artificial-esta-a-tornar-a-web-mais-inclusiva/1544/
 6. W3C — *Accessibility of Machine Learning and Generative AI* (rascunho técnico): https://w3c.github.io/ai-accessibility/
 
