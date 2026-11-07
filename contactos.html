@@ -1,232 +1,127 @@
 <!DOCTYPE html>
+
 <html lang="pt">
- <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="Entre em contacto com a equipa da PetCare em Vila Nova de Gaia. Envie-nos uma mensagem ou visite-nos." name="description">
-  <title>
-   Contactos - PetCare Vila Nova de Gaia
-  </title>
-  <link href="style.css" rel="stylesheet">
- </head>
- <body>
-  <header class="cabecalho-site">
-   <div class="identidade-site">
-    <p class="nome-site">
-     PetCare
-    </p>
-    <p class="subtitulo-site">
-     Cuidados e servi&ccedil;os para animais de estima&ccedil;&atilde;o
-    </p>
-   </div>
-   <nav aria-label="Navega&ccedil;&atilde;o principal">
-    <ul>
-     <li>
-      <a href="index.html">
-       In&iacute;cio
-      </a>
-     </li>
-     <li>
-      <a href="servicos.html">
-       Servi&ccedil;os
-      </a>
-     </li>
-     <li>
-      <a href="galeria.html">
-       Galeria
-      </a>
-     </li>
-     <li>
-      <a href="sobre.html">
-       Sobre N&oacute;s
-      </a>
-     </li>
-     <li>
-      <a aria-current="page" href="contactos.html">
-       Contactos
-      </a>
-     </li>
-     <li>
-      <a href="artigo.html">
-       Artigo
-      </a>
-     </li>
-     <li>
-      <a href="acessibilidade.html">
-       Acessibilidade
-      </a>
-     </li>
-    </ul>
-   </nav>
-  </header>
-  <main class="pagina-contactos">
-   <section class="cabecalho-pagina">
-    <h1>
-     Fale Connosco
-    </h1>
-    <p>
-     Estamos dispon&iacute;veis para responder a todas as suas d&uacute;vidas e agendar os servi&ccedil;os do seu animal.
-    </p>
-   </section>
-   <section class="seccao-contacto">
-    <h2>
-     Informa&ccedil;&otilde;es de Contacto
-    </h2>
-    <div class="contactos-linha">
-     <div class="dados-contacto">
-      <div class="contacto-item">
-       <span aria-hidden="true" class="contacto-icone">
-        ●
-       </span>
-       <div class="contacto-item-texto">
-        <strong>
-         Morada
-        </strong>
-        <p>
-         Rua de Exemplo, n.&ordm; 123
-        </p>
-        <p>
-         4400-000 Vila Nova de Gaia
-        </p>
-       </div>
-      </div>
-      <div class="contacto-item">
-       <span aria-hidden="true" class="contacto-icone">
-        &phone;
-       </span>
-       <div class="contacto-item-texto">
-        <strong>
-         Telefone
-        </strong>
-        <p>
-         +351 220 000 000
-        </p>
-       </div>
-      </div>
-      <div class="contacto-item">
-       <span aria-hidden="true" class="contacto-icone">
-        ✉
-       </span>
-       <div class="contacto-item-texto">
-        <strong>
-         E-mail
-        </strong>
-        <p>
-         contacto@petcare-exemplo.pt
-        </p>
-       </div>
-      </div>
-      <div class="contacto-item">
-       <span aria-hidden="true" class="contacto-icone">
-        ◷
-       </span>
-       <div class="contacto-item-texto">
-        <strong>
-         Hor&aacute;rio de Funcionamento
-        </strong>
-        <ul>
-         <li>
-          Segunda a Sexta-feira: 08h00 - 20h00
-         </li>
-         <li>
-          S&aacute;bados e Domingos: 09h00 - 18h00
-         </li>
-        </ul>
-       </div>
-      </div>
-     </div>
-     <div class="mapa-contactos">
-      <img src="imagens/localizacao.jpg" alt="Fotografia da localização das instalações PetCare em Vila Nova de Gaia" width="600" height="400">
-     </div>
-    </div>
-   </section>
-   <section class="seccao-formulario">
-    <h2>
-     Enviar Mensagem
-    </h2>
-    <form action="#" method="post">
-     <p class="campo-formulario">
-      <label for="nome">
-       Nome Completo *
-      </label>
-      <br>
-      <input id="nome" name="nome" placeholder="O seu nome completo" required="" type="text">
-     </p>
-     <p class="campo-formulario">
-      <label for="email">
-       Endere&ccedil;o de E-mail *
-      </label>
-      <br>
-      <input id="email" name="email" placeholder="o.seu.email@exemplo.pt" required="" type="email">
-     </p>
-     <p class="campo-formulario">
-      <label for="telefone">
-       Telefone
-      </label>
-      <br>
-      <input id="telefone" name="telefone" pattern="[0-9]{9}" placeholder="Ex.: 912345678" title="Introduza um n&uacute;mero de telefone com 9 algarismos." type="tel">
-     </p>
-     <p class="campo-formulario">
-      <label for="servico">
-       Servi&ccedil;o Pretendido *
-      </label>
-      <br>
-      <select id="servico" name="servico" required="">
-       <option value="">
-        Selecione um servi&ccedil;o
-       </option>
-       <option value="hotel">
-        Hotel para Animais
-       </option>
-       <option value="banho">
-        Banho e Tosquia
-       </option>
-       <option value="passeio">
-        Passeios
-       </option>
-      </select>
-     </p>
-     <p class="campo-formulario">
-      <label for="data">
-       Data Pretendida
-      </label>
-      <br>
-      <input id="data" min="2026-10-22" name="data" type="date">
-     </p>
-     <p class="campo-mensagem">
-      <label for="mensagem">
-       Mensagem *
-      </label>
-      <br>
-      <textarea cols="60" id="mensagem" maxlength="1000" name="mensagem" placeholder="Escreva aqui a sua mensagem..." required="" rows="7"></textarea>
-     </p>
-     <p class="campo-consentimento">
-      <input id="termos" name="termos" required="" type="checkbox">
-      <label for="termos">
-       Confirmo que pretendo enviar este pedido de contacto &agrave; PetCare.
-      </label>
-     </p>
-     <p class="campo-enviar">
-      <button type="submit">
-       Enviar Mensagem
-      </button>
-     </p>
-    </form>
-   </section>
-  </main>
-  <footer>
-   <p>
-    &copy; 2026 PetCare ISLA Gaia. Todos os direitos reservados.
-   </p>
-   <p>
-    <a href="contactos.html">
-     Contactos
-    </a>
-    |
-    <a href="acessibilidade.html">
-     Declara&ccedil;&atilde;o de Acessibilidade
-    </a>
-   </p>
-  </footer>
- </body>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Entre em contacto com a equipa da PetCare em Vila Nova de Gaia. Envie-nos uma mensagem ou visite-nos." name="description">
+        <title>Contactos - PetCare Vila Nova de Gaia</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecalho-site">
+            <div class="identidade-site">
+                <p class="nome-site">PetCare</p>
+                <p class="subtitulo-site">Cuidados e servi&ccedil;os para animais de estima&ccedil;&atilde;o</p>
+            </div>
+            <nav aria-label="Navega&ccedil;&atilde;o principal">
+                <ul>
+                    <li><a href="index.html">In&iacute;cio</a></li>
+                    <li><a href="servicos.html">Servi&ccedil;os</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre N&oacute;s</a></li>
+                    <li><a aria-current="page" href="contactos.html">Contactos</a></li>
+                    <li><a href="artigo.html">Artigo</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="pagina-contactos">
+            <section class="cabecalho-pagina">
+                <h1>Fale Connosco</h1>
+                <p>Estamos dispon&iacute;veis para responder a todas as suas d&uacute;vidas e agendar os servi&ccedil;os do seu animal.</p>
+            </section>
+            <section class="seccao-contacto">
+                <h2>Informa&ccedil;&otilde;es de Contacto</h2>
+                <div class="contactos-linha">
+                    <div class="dados-contacto">
+                        <div class="contacto-item">
+                            <span aria-hidden="true" class="contacto-icone">●</span>
+                            <div class="contacto-item-texto">
+                                <strong>Morada</strong>
+                                <p>Rua de Exemplo, n.&ordm; 123</p>
+                                <p>4400-000 Vila Nova de Gaia</p>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <span aria-hidden="true" class="contacto-icone">&phone;</span>
+                            <div class="contacto-item-texto">
+                                <strong>Telefone</strong>
+                                <p>+351 220 000 000</p>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <span aria-hidden="true" class="contacto-icone">✉</span>
+                            <div class="contacto-item-texto">
+                                <strong>E-mail</strong>
+                                <p>contacto@petcare-exemplo.pt</p>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <span aria-hidden="true" class="contacto-icone">◷</span>
+                            <div class="contacto-item-texto">
+                                <strong>Hor&aacute;rio de Funcionamento</strong>
+                                <ul>
+                                    <li>Segunda a Sexta-feira: 08h00 - 20h00</li>
+                                    <li>S&aacute;bados e Domingos: 09h00 - 18h00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mapa-contactos">
+                        <img src="imagens/localizacao.jpg" alt="Fotografia da localização das instalações PetCare em Vila Nova de Gaia" width="600" height="400">
+                    </div>
+                </div>
+            </section>
+            <section class="seccao-formulario">
+                <h2>Enviar Mensagem</h2>
+                <form action="#" method="post">
+                    <p class="campo-formulario">
+                        <label for="nome">Nome Completo *</label>
+                        <br>
+                        <input id="nome" name="nome" placeholder="O seu nome completo" required="" type="text">
+                    </p>
+                    <p class="campo-formulario">
+                        <label for="email">Endere&ccedil;o de E-mail *</label>
+                        <br>
+                        <input id="email" name="email" placeholder="o.seu.email@exemplo.pt" required="" type="email">
+                    </p>
+                    <p class="campo-formulario">
+                        <label for="telefone">Telefone</label>
+                        <br>
+                        <input id="telefone" name="telefone" pattern="[0-9]{9}" placeholder="Ex.: 912345678" title="Introduza um n&uacute;mero de telefone com 9 algarismos." type="tel">
+                    </p>
+                    <p class="campo-formulario">
+                        <label for="servico">Servi&ccedil;o Pretendido *</label>
+                        <br>
+                        <select id="servico" name="servico" required="">
+                            <option value="">Selecione um servi&ccedil;o</option>
+                            <option value="hotel">Hotel para Animais</option>
+                            <option value="banho">Banho e Tosquia</option>
+                            <option value="passeio">Passeios</option>
+                        </select>
+                    </p>
+                    <p class="campo-formulario">
+                        <label for="data">Data Pretendida</label>
+                        <br>
+                        <input id="data" min="2026-10-22" name="data" type="date">
+                    </p>
+                    <p class="campo-mensagem">
+                        <label for="mensagem">Mensagem *</label>
+                        <br>
+                        <textarea cols="60" id="mensagem" maxlength="1000" name="mensagem" placeholder="Escreva aqui a sua mensagem..." required="" rows="7"></textarea>
+                    </p>
+                    <p class="campo-consentimento">
+                        <input id="termos" name="termos" required="" type="checkbox">
+                        <label for="termos">Confirmo que pretendo enviar este pedido de contacto &agrave; PetCare.</label>
+                    </p>
+                    <p class="campo-enviar"> <button type="submit">Enviar Mensagem</button> </p>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
+            <p> <a href="contactos.html">Contactos</a> | <a href="acessibilidade.html">Declara&ccedil;&atilde;o de Acessibilidade</a> </p>
+        </footer>
+    </body>
 </html>
