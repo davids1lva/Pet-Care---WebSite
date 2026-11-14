@@ -22,42 +22,50 @@ O projeto apresenta uma empresa fictícia de serviços para animais de estimaç�
 - `index.html` — Página inicial
 - `servicos.html` — Serviços e preços
 - `galeria.html` — Galeria de fotografias
-- `sobre.html` — Sobre a PetCare
+- `sobre.html` — Sobre a PetCare e equipa
 - `contactos.html` — Contactos e formulário
-- `artigo.html` — Preparação do artigo académico
+- `artigo.html` — Artigo académico
 - `acessibilidade.html` — Declaração de acessibilidade
 
-## Etapa 5 — Design Responsivo
+## Etapa 6 — Bootstrap e Auditoria de Acessibilidade
 
-A E5 foi desenvolvida a partir da versão final da E4, mantendo os sete ficheiros HTML e acrescentando as novas regras no `style.css`.
+A E6 foi desenvolvida a partir da versão E5, mantendo o design responsivo e integrando a framework **Bootstrap 5.3.8**.
 
-Foram implementados os seguintes requisitos:
+Foram desenvolvidos os seguintes requisitos:
 
-1. **Mobile-first:** estilos adaptados a telemóveis, com três pontos de rutura (`480px`, `768px` e `1024px`).
-2. **Flexbox e Grid:** utilização de Flexbox na navegação e CSS Grid na galeria.
-3. **Sem deslocação horizontal:** adaptação dos conteúdos para ecrãs de `360px` e `1280px`.
-4. **Imagens responsivas:** utilização de `max-width: 100%` e `height: auto`.
-5. **Alvos de toque:** dimensões mínimas de `24 × 24px` nos elementos interativos.
+1. **Bootstrap:** integração da framework CSS, com a versão identificada.
+2. **Componentes:** utilização de botões, cartões, tabelas, formulários e alertas Bootstrap.
+3. **Personalização:** criação do ficheiro `bootstrap-custom.css`, com pelo menos cinco personalizações visuais de acordo com a identidade do PetCare.
+4. **Grelha responsiva:** utilização de `row`, `col-12`, `col-md-6` e `col-lg-4` nas páginas Galeria e Sobre Nós.
+5. **Artigo académico:** desenvolvimento da primeira versão do artigo *O Papel da Inteligência Artificial na Avaliação da Acessibilidade Web*, com o objetivo de apresentar pelo menos 60% do texto final.
+6. **Auditoria de acessibilidade:** avaliação das páginas Início, Contactos e Galeria com Lighthouse e WAVE.
+
+Foi também implementado um **menu hambúrguer na versão móvel**, com cabeçalho persistente e possibilidade de fechar o menu através do botão, de um clique fora ou da tecla Escape.
 
 ## Testes e evidências
 
-Foram realizados testes de responsividade através das ferramentas de programador do Google Chrome, incluindo verificações do menu, galeria, imagens e dimensões dos elementos interativos.
+Foram realizadas auditorias de acessibilidade às três páginas selecionadas.
 
-Foi também efetuada uma verificação local das sete páginas em diferentes resoluções, sem transbordo horizontal detetado.
+| Página | Lighthouse Mobile | WAVE Errors | WAVE Contrast Errors | WAVE Alerts |
+|---|---:|---:|---:|---:|
+| Início | 100/100 | 0 | 0 | 2 |
+| Contactos | 100/100 | 0 | 0 | 1 |
+| Galeria | 100/100 | 0 | 0 | 1 |
 
-As evidências da E5 são organizadas em:
+Os alertas identificados pelo WAVE foram registados para revisão manual. Os resultados automáticos não substituem uma avaliação completa da acessibilidade.
 
-`docs/responsivo/`
+**Documentação da E6:** `docs/E6/auditoria/`
 
-Esta pasta contém o relatório `relatorio-E5.md` e as capturas dos testes.
+Esta pasta reúne o relatório e as seis capturas das auditorias Lighthouse e WAVE.
 
 ## Tecnologias utilizadas
 
-- HTML5
-- CSS3
-- Flexbox
-- CSS Grid
+- HTML5 e CSS3
+- Bootstrap 5.3.8
+- Flexbox e CSS Grid
 - Media Queries
+- JavaScript — menu hambúrguer
+- Lighthouse e WAVE
 - Git e GitHub
 - GitHub Pages
 
@@ -66,7 +74,8 @@ Esta pasta contém o relatório `relatorio-E5.md` e as capturas dos testes.
 - **E3:** estilização CSS, guia de estilo e validação.
 - **E4:** modelo de caixa, tabelas, formulários, elementos HTML5 e acessibilidade.
 - **E5:** design responsivo, Flexbox, Grid, imagens adaptáveis e alvos de toque.
+- **E6:** Bootstrap, componentes personalizados, grelha responsiva, artigo académico e auditoria de acessibilidade.
 
 ---
 
-**Projeto académico — ISLA Gaia | Programação Web — Cliente (15791) | E5**
+**Projeto académico — ISLA Gaia | Programação Web — Cliente (15791) | E6**
