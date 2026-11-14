@@ -1,0 +1,77 @@
+
+/* E6 — Personalizações de componentes Bootstrap */
+
+/* 1. Botões */
+.btn-primary {
+    background-color: #176B66;
+    border-color: #176B66;
+}
+
+/* 2. Botões ao passar o rato */
+.btn-primary:hover {
+    background-color: #0D4945;
+    border-color: #0D4945;
+}
+
+/* 3. Cartões */
+.card {
+    border: 1px solid #C9DDD6;
+    border-radius: 8px;
+}
+
+/* 4. Cabeçalho das tabelas */
+.table thead th {
+    background-color: #173F3D;
+    color: #FFFFFF;
+}
+
+/* 5. Campos de formulário em foco */
+.form-control:focus,
+.form-select:focus {
+    border-color: #176B66;
+    box-shadow: 0 0 0 0.2rem rgba(23, 107, 102, 0.2);
+}
+
+/* E6 - Integração da grelha Bootstrap com o PetCare */
+
+/* Galeria: utilizar a grelha Bootstrap */
+.grelha-galeria.row {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: none;
+    gap: 0;
+    text-align: left;
+}
+
+/* Fotografias dentro das colunas Bootstrap */
+.grelha-galeria.row > [class*="col-"] figure {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Imagens da galeria */
+.grelha-galeria.row figure img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Equipa: utilizar a grelha Bootstrap */
+.equipa-cartoes.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    text-align: left;
+}
+
+/* Cartões adaptados às colunas Bootstrap */
+.equipa-cartoes.row > [class*="col-"] > .cartao-equipa {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
