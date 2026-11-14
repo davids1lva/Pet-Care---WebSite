@@ -14,17 +14,30 @@
                 <p class="nome-site">PetCare</p>
                 <p class="subtitulo-site">Cuidados e serviços para animais de estimação</p>
             </div>
-            <nav aria-label="Navegação principal">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
-                    <li><a href="artigo.html">Artigo</a></li>
-                    <li><a aria-current="page" href="acessibilidade.html">Acessibilidade</a></li>
-                </ul>
-            </nav>
+            
+<!-- Botão hambúrguer para dispositivos móveis -->
+<button
+    class="botao-menu"
+    type="button"
+    aria-label="Abrir menu de navegação"
+    aria-expanded="false"
+    aria-controls="menu-principal">
+    ☰
+</button>
+
+<!-- Menu de navegação principal -->
+<nav id="menu-principal" aria-label="Navegação principal">
+    <ul>
+        <li><a aria-current="page" href="index.html">Início</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="artigo.html">Artigo</a></li>
+        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+    </ul>
+</nav>
+
         </header>
         <main class="pagina-acessibilidade">
             <section class="cabecalho-pagina">
@@ -86,5 +99,53 @@
             <p>© 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
             <p> <a href="contactos.html">Contactos</a> | <a href="acessibilidade.html">Declaração de Acessibilidade</a> </p>
         </footer>
+        
+<script>
+    const botaoMenu = document.querySelector(".botao-menu");
+    const menuPrincipal = document.querySelector("#menu-principal");
+
+    if (botaoMenu && menuPrincipal) {
+
+        function fecharMenu() {
+            menuPrincipal.classList.remove("menu-aberto");
+            botaoMenu.setAttribute("aria-expanded", "false");
+            botaoMenu.setAttribute(
+                "aria-label",
+                "Abrir menu de navegação"
+            );
+            botaoMenu.textContent = "☰";
+        }
+
+        // Abrir e fechar ao clicar no botão
+        botaoMenu.addEventListener("click", function () {
+            const aberto = menuPrincipal.classList.toggle("menu-aberto");
+
+            botaoMenu.setAttribute("aria-expanded", String(aberto));
+            botaoMenu.setAttribute(
+                "aria-label",
+                aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
+            );
+            botaoMenu.textContent = aberto ? "✕" : "☰";
+        });
+
+        // Fechar ao clicar fora do menu e do botão
+        document.addEventListener("click", function (evento) {
+            const clicouNoMenu = menuPrincipal.contains(evento.target);
+            const clicouNoBotao = botaoMenu.contains(evento.target);
+
+            if (!clicouNoMenu && !clicouNoBotao) {
+                fecharMenu();
+            }
+        });
+
+        // Fechar ao carregar na tecla Escape
+        document.addEventListener("keydown", function (evento) {
+            if (evento.key === "Escape") {
+                fecharMenu();
+            }
+        });
+    }
+</script>
+
     </body>
 </html>
