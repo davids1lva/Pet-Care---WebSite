@@ -79,5 +79,32 @@
                 <a href="acessibilidade.html">Declaração de Acessibilidade</a>
             </p>
         </footer>
+        
+<script>
+    const botaoMenu = document.querySelector(".botao-menu");
+    const menuPrincipal = document.querySelector("#menu-principal");
+
+    botaoMenu.addEventListener("click", function () {
+        const aberto = menuPrincipal.classList.toggle("menu-aberto");
+
+        botaoMenu.setAttribute("aria-expanded", String(aberto));
+        botaoMenu.setAttribute(
+            "aria-label",
+            aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
+        );
+
+        botaoMenu.textContent = aberto ? "✕" : "☰";
+    });
+
+    document.addEventListener("keydown", function (evento) {
+        if (evento.key === "Escape") {
+            menuPrincipal.classList.remove("menu-aberto");
+            botaoMenu.setAttribute("aria-expanded", "false");
+            botaoMenu.setAttribute("aria-label", "Abrir menu de navegação");
+            botaoMenu.textContent = "☰";
+        }
+    });
+</script>
+
     </body>
 </html>
