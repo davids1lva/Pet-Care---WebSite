@@ -41,7 +41,7 @@ O WAVE indicou **AIM Score 10/10** nas três páginas. Este indicador não subst
 | Início | **Redundant link** | O WAVE encontrou uma possível repetição de ligação. | Abrir **Details** no WAVE, selecionar o alerta e verificar os dois links envolvidos. Se forem redundantes e estiverem próximos, avaliar uma apresentação ou designação menos repetitiva. | **Por identificar e avaliar** |
 
 
-## 6. Conclusão
+## 4. Conclusão
 
 A auditoria inicial às páginas Início, Contactos e Galeria obteve **100/100 no Lighthouse (Accessibility)** em todas as páginas e **zero erros e zero erros de contraste sinalizados pelo WAVE**. O WAVE apresentou **quatro alertas no total**, distribuídos entre *Possible heading* (três ocorrências) e *Redundant link* (uma ocorrência). Estes alertas exigem análise manual antes de qualquer correção.
 
