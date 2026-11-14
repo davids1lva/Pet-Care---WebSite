@@ -6,64 +6,113 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Conheça as instalações e os animais felizes na galeria de fotografias da PetCare em Gaia." name="description">
         <title>Galeria - PetCare Vila Nova de Gaia</title>
+        <!-- Bootstrap 5.3.8 -->
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+        <!-- CSS original do PetCare -->
         <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header class="cabecalho-site">
-            <div class="identidade-site">
-                <p class="nome-site">PetCare</p>
-                <p class="subtitulo-site">Cuidados e serviços para animais de estimação</p>
+
+        <!-- Personalizações da E6 -->
+        <link href="bootstrap-custom.css" rel="stylesheet">
+            </head>
+            <body>
+                <header class="cabecalho-site">
+                    <div class="identidade-site">
+                        <p class="nome-site">PetCare</p>
+                        <p class="subtitulo-site">Cuidados e serviços para animais de estimação</p>
+                    </div>
+
+        <!-- Botão hambúrguer para dispositivos móveis -->
+        <button
+            class="botao-menu"
+            type="button"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+            aria-controls="menu-principal">
+            ☰
+        </button>
+
+        <!-- Menu de navegação principal -->
+        <nav id="menu-principal" aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a aria-current="page" href="galeria.html">Galeria</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="artigo.html">Artigo</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            </ul>
+        </nav>
+
+                </header>
+                <main class="pagina-galeria">
+                    <section class="cabecalho-pagina">
+                        <h1>Galeria de Fotos do Espaço PetCare</h1>
+                        <p>Veja como os nossos hóspedes se divertem e desfrutam de momentos de relaxamento nas nossas instalações.</p>
+                    </section>
+                    <section class="seccao-galeria">
+                        <h2>As Nossas Instalações e Hóspedes</h2>
+                
+        <!-- E6 - Grelha responsiva Bootstrap na galeria -->
+        <div class="grelha-galeria row g-3">
+
+            <div class="col-12 col-md-6">
+                <figure>
+                    <img
+                        src="imagens/Galeria/cao-relvado.png"
+                        alt="Cão a brincar no jardim relvado da PetCare"
+                        width="600"
+                        height="400">
+                    <figcaption>
+                        Zona de recreio exterior para cães ao ar livre.
+                    </figcaption>
+                </figure>
             </div>
 
-<!-- Botão hambúrguer para dispositivos móveis -->
-<button
-    class="botao-menu"
-    type="button"
-    aria-label="Abrir menu de navegação"
-    aria-expanded="false"
-    aria-controls="menu-principal">
-    ☰
-</button>
+            <div class="col-12 col-md-6">
+                <figure>
+                    <img
+                        src="imagens/Galeria/gato-deitado.png"
+                        alt="Gato deitado num arranhador confortável junto à janela"
+                        width="600"
+                        height="400">
+                    <figcaption>
+                        Suites felinas com luz natural e estruturas de escalada.
+                    </figcaption>
+                </figure>
+            </div>
 
-<!-- Menu de navegação principal -->
-<nav id="menu-principal" aria-label="Navegação principal">
-    <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a aria-current="page" href="galeria.html">Galeria</a></li>
-        <li><a href="sobre.html">Sobre Nós</a></li>
-        <li><a href="contactos.html">Contactos</a></li>
-        <li><a href="artigo.html">Artigo</a></li>
-        <li><a href="acessibilidade.html">Acessibilidade</a></li>
-    </ul>
-</nav>
+            <div class="col-12 col-md-6">
+                <figure>
+                    <img
+                        src="imagens/Galeria/cao-banho.png"
+                        alt="Profissional a secar o pelo de um cão após o banho"
+                        width="600"
+                        height="400">
+                    <figcaption>
+                        Área de banhos e tosquias equipada com banheiras próprias.
+                    </figcaption>
+                </figure>
+            </div>
 
-        </header>
-        <main class="pagina-galeria">
-            <section class="cabecalho-pagina">
-                <h1>Galeria de Fotos do Espaço PetCare</h1>
-                <p>Veja como os nossos hóspedes se divertem e desfrutam de momentos de relaxamento nas nossas instalações.</p>
-            </section>
-            <section class="seccao-galeria">
-                <h2>As Nossas Instalações e Hóspedes</h2>
-                <div class="grelha-galeria">
-                    <figure>
-                        <img alt="Cão a brincar no jardim relvado da PetCare" height="400" src="imagens/Galeria/cao-relvado.png" width="600">
-                        <figcaption>Zona de recreio exterior para cães ao ar livre.</figcaption>
-                    </figure>
-                    <figure>
-                        <img alt="Gato deitado num arranhador confortável junto à janela" height="400" src="imagens/Galeria/gato-deitado.png" width="600">
-                        <figcaption>Suites felinas com luz natural e estruturas de escalada.</figcaption>
-                    </figure>
-                    <figure>
-                        <img alt="Profissional a secar o pelo de um cão após o banho" height="400" src="imagens/Galeria/cao-banho.png" width="600">
-                        <figcaption>Área de banhos e tosquias equipada com banheiras próprias.</figcaption>
-                    </figure>
-                    <figure>
-                        <img alt="Treinadora a passear com três cães com trela num parque" height="400" src="imagens/Galeria/passeio-caes.png" width="600">
-                        <figcaption>Passeios diários pela natureza e zonas verdes de Gaia.</figcaption>
-                    </figure>
-                </div>
+            <div class="col-12 col-md-6">
+                <figure>
+                    <img
+                        src="imagens/Galeria/passeio-caes.png"
+                        alt="Treinadora a passear com três cães com trela num parque"
+                        width="600"
+                        height="400">
+                    <figcaption>
+                        Passeios diários pela natureza e zonas verdes de Gaia.
+                    </figcaption>
+                </figure>
+            </div>
+
+        </div>
+
             </section>
         </main>
         <footer>
