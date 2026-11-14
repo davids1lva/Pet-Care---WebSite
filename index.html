@@ -82,31 +82,54 @@
             </p>
         </footer>
         
+
 <script>
     const botaoMenu = document.querySelector(".botao-menu");
     const menuPrincipal = document.querySelector("#menu-principal");
 
-    botaoMenu.addEventListener("click", function () {
-        const aberto = menuPrincipal.classList.toggle("menu-aberto");
+    if (botaoMenu && menuPrincipal) {
 
-        botaoMenu.setAttribute("aria-expanded", String(aberto));
-        botaoMenu.setAttribute(
-            "aria-label",
-            aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
-        );
-
-        botaoMenu.textContent = aberto ? "✕" : "☰";
-    });
-
-    document.addEventListener("keydown", function (evento) {
-        if (evento.key === "Escape") {
+        function fecharMenu() {
             menuPrincipal.classList.remove("menu-aberto");
             botaoMenu.setAttribute("aria-expanded", "false");
-            botaoMenu.setAttribute("aria-label", "Abrir menu de navegação");
+            botaoMenu.setAttribute(
+                "aria-label",
+                "Abrir menu de navegação"
+            );
             botaoMenu.textContent = "☰";
         }
-    });
+
+        // Abrir e fechar ao clicar no botão
+        botaoMenu.addEventListener("click", function () {
+            const aberto = menuPrincipal.classList.toggle("menu-aberto");
+
+            botaoMenu.setAttribute("aria-expanded", String(aberto));
+            botaoMenu.setAttribute(
+                "aria-label",
+                aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
+            );
+            botaoMenu.textContent = aberto ? "✕" : "☰";
+        });
+
+        // Fechar ao clicar fora do menu e do botão
+        document.addEventListener("click", function (evento) {
+            const clicouNoMenu = menuPrincipal.contains(evento.target);
+            const clicouNoBotao = botaoMenu.contains(evento.target);
+
+            if (!clicouNoMenu && !clicouNoBotao) {
+                fecharMenu();
+            }
+        });
+
+        // Fechar ao carregar na tecla Escape
+        document.addEventListener("keydown", function (evento) {
+            if (evento.key === "Escape") {
+                fecharMenu();
+            }
+        });
+    }
 </script>
+
 
     </body>
 </html>
