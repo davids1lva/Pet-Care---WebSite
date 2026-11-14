@@ -1268,28 +1268,65 @@ input[type="checkbox"] {
     }
 }
 
-/* Menu hambúrguer — E6 */
+/* E6 — Menu hambúrguer com cabeçalho fixo no telemóvel */
 
-/* No computador, o botão não aparece */
+/* O botão não aparece no computador */
 .botao-menu {
     display: none;
 }
 
 @media (max-width: 767px) {
 
-    /* Botão sempre acessível enquanto se faz scroll */
+    /* Cabeçalho fixo no topo */
+    body > header.cabecalho-site {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 76px;
+        padding: 0.75rem 1rem;
+        background-color: #176B66;
+    }
+
+    /* Nome e subtítulo do PetCare */
+    .cabecalho-site .identidade-site {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        padding: 0 44px;
+        text-align: center;
+    }
+
+    .cabecalho-site .nome-site {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .cabecalho-site .subtitulo-site {
+        font-size: 0.7rem;
+        margin: 0;
+    }
+
+    /* Botão hambúrguer dentro do cabeçalho */
     .botao-menu {
         display: flex;
         align-items: center;
         justify-content: center;
-        position: fixed;
-        top: 12px;
+
+        position: absolute;
+        top: 50%;
         left: 12px;
-        z-index: 1001;
+        transform: translateY(-50%);
+        z-index: 1002;
 
         width: 44px;
         height: 44px;
         padding: 0;
+
         border: 2px solid #FFFFFF;
         border-radius: 6px;
         background-color: #0D4945;
@@ -1298,37 +1335,31 @@ input[type="checkbox"] {
         cursor: pointer;
     }
 
-    /* Evita que o botão tape o nome do site */
-    .cabecalho-site .identidade-site {
-        padding-left: 50px;
-    }
-
-    /* Menu fechado por defeito no telemóvel */
+    /* Menu escondido por defeito */
     .cabecalho-site nav[aria-label="Navegação principal"] {
         display: none;
-        position: fixed;
-        top: 64px;
-        left: 12px;
-        right: 12px;
-        z-index: 1000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1001;
 
-        width: auto;
-        max-height: calc(100dvh - 80px);
+        width: 100%;
+        max-height: calc(100dvh - 76px);
         overflow-y: auto;
 
         padding: 1rem;
         background-color: #176B66;
-        border: 2px solid #0D4945;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        border-bottom: 3px solid #0D4945;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
 
-    /* Menu aberto ao clicar no botão */
+    /* Menu visível quando aberto */
     .cabecalho-site nav[aria-label="Navegação principal"].menu-aberto {
         display: block;
     }
 
-    /* Links organizados verticalmente */
+    /* Links apresentados verticalmente */
     .cabecalho-site nav[aria-label="Navegação principal"] ul {
         display: flex;
         flex-direction: column;
@@ -1344,32 +1375,19 @@ input[type="checkbox"] {
     .cabecalho-site nav[aria-label="Navegação principal"] a {
         width: 100%;
         min-height: 44px;
-        text-align: left;
         justify-content: flex-start;
+        text-align: left;
         padding: 0.7rem 1rem;
     }
 
-    /* Rodapé fixo apenas no telemóvel */
-    body {
-        padding-bottom: 130px;
-    }
-
+    /* Rodapé volta ao comportamento normal */
     body > footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 900;
-
-        padding: 0.5rem 1rem;
+        position: static;
+        padding: 1rem;
         text-align: center;
-        background-color: #176B66;
-        color: #FFFFFF;
-        font-size: 0.8rem;
     }
 
-    body > footer p {
-        margin: 0.15rem 0;
+    body {
+        padding-bottom: 0;
     }
 }
-
