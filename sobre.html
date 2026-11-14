@@ -6,7 +6,16 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Conheça a equipa, as instalações em Vila Nova de Gaia e as redes sociais da PetCare." name="description">
         <title>Sobre Nós - PetCare Vila Nova de Gaia</title>
-        <link href="style.css" rel="stylesheet">
+        <!-- Bootstrap 5.3.8 -->
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+<!-- CSS original do PetCare -->
+<link href="style.css" rel="stylesheet">
+
+<!-- Personalizações da E6 -->
+<link href="bootstrap-custom.css" rel="stylesheet">
     </head>
     <body>
         <header class="cabecalho-site">
@@ -48,29 +57,80 @@
             <section class="seccao-equipa">
                 <h2>A Nossa Equipa (Pessoas)</h2>
                 <p>Contamos com profissionais altamente qualificados e apaixonados pelo bem-estar animal:</p>
-                <div class="equipa-cartoes">
-                    <article class="cartao-equipa"><img alt="Retrato da Dra. Ana Martins com bata branca e estetoscópio" height="400" src="imagens/equipa/ana-martins.png" width="300"><div class="equipa-descricao">
-                            <h3>Dra. Ana Martins</h3>
+                
+        <!-- E6 - Grelha responsiva Bootstrap na equipa -->
+        <div class="equipa-cartoes row g-3">
 
-                            <p><strong>Cargo:</strong> Médica Veterinária Diretora</p>
-                            <p>Responsável pela supervisão clínica e acompanhamento diário de saúde dos hóspedes de quatro patas.</p>
-                        </div>
-                    </article>
-                    <article class="cartao-equipa"><img alt="Retrato de João Oliveira com vestuário profissional de treinador de animais" height="400" src="imagens/equipa/joao-oliveira.png" width="300"><div class="equipa-descricao">
-                            <h3>João Oliveira</h3>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="cartao-equipa">
+                    <img
+                        src="imagens/equipa/ana-martins.png"
+                        alt="Retrato da Dra. Ana Martins com bata branca e estetoscópio"
+                        width="300"
+                        height="400">
 
-                            <p><strong>Cargo:</strong> Coordenador de Atividades e Treinador</p>
-                            <p>Especialista em comportamento animal, dinamiza os passeios e as sessões de exercício e socialização.</p>
-                        </div>
-                    </article>
-                    <article class="cartao-equipa"><img alt="Retrato de Carla Mendes com uniforme profissional de grooming" height="400" src="imagens/equipa/carla-mendes.png" width="300"><div class="equipa-descricao">
-                            <h3>Carla Mendes</h3>
+                    <div class="equipa-descricao">
+                        <h3>Dra. Ana Martins</h3>
+                        <p>
+                            <strong>Cargo:</strong>
+                            Médica Veterinária Diretora
+                        </p>
+                        <p>
+                            Responsável pela supervisão clínica e
+                            acompanhamento diário de saúde dos
+                            hóspedes de quatro patas.
+                        </p>
+                    </div>
+                </article>
+            </div>
 
-                            <p><strong>Cargo:</strong> Especialista em Grooming e Bem-estar</p>
-                            <p>Dedicada aos serviços de banho, tosquia e cuidados de higiene personalizados.</p>
-                        </div>
-                    </article>
-                </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="cartao-equipa">
+                    <img
+                        src="imagens/equipa/joao-oliveira.png"
+                        alt="Retrato de João Oliveira com vestuário profissional de treinador de animais"
+                        width="300"
+                        height="400">
+
+                    <div class="equipa-descricao">
+                        <h3>João Oliveira</h3>
+                        <p>
+                            <strong>Cargo:</strong>
+                            Coordenador de Atividades e Treinador
+                        </p>
+                        <p>
+                            Especialista em comportamento animal,
+                            dinamiza os passeios e as sessões de
+                            exercício e socialização.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="cartao-equipa">
+                    <img
+                        src="imagens/equipa/carla-mendes.png"
+                        alt="Retrato de Carla Mendes com uniforme profissional de grooming"
+                        width="300"
+                        height="400">
+
+                    <div class="equipa-descricao">
+                        <h3>Carla Mendes</h3>
+                        <p>
+                            <strong>Cargo:</strong>
+                            Especialista em Grooming e Bem-estar
+                        </p>
+                        <p>
+                            Dedicada aos serviços de banho, tosquia
+                            e cuidados de higiene personalizados.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
             </section>
             <div class="sobre-colunas">
                 <section class="">
@@ -93,7 +153,7 @@
             </div>
         </main>
         <footer>
-            <p>© 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
+            <p>©️ 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
             <p>
                 <a href="contactos.html">Contactos</a> |
                 <a href="acessibilidade.html">Declaração de Acessibilidade</a>
