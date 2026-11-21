@@ -27,3 +27,49 @@
                 aria-controls="menu-principal">
                 ☰
             </button>
+            <nav id="menu-principal" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="artigo.html">Artigo</a></li>
+                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                    <li><a aria-current="page" href="comparacao.html">Comparação</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="pagina-comparacao">
+            <section class="cabecalho-pagina">
+                <h1>Comparação de Frameworks CSS</h1>
+                <p>Implementação do mesmo componente (cartão de destaque de serviço com botão de ação) em Bootstrap, Foundation e W3.CSS.</p>
+            </section>
+
+            <section aria-labelledby="exemplos-componente">
+                <h2 id="exemplos-componente">Mesmo Componente nas 3 Frameworks</h2>
+
+                <h3>1. Bootstrap 5.3.8</h3>
+                <div class="card mb-4" style="max-width: 100%; width: 100%;">
+                    <div class="card-body">
+                        <h4 class="card-title">Hotel para Cães — Estadia 24h</h4>
+                        <p class="card-text">Alojamento climatizado, vigilância permanente e recreio exterior diário.</p>
+                        <a href="contactos.html" class="btn btn-primary">Fazer marcação</a>
+                    </div>
+                </div>
+
+                <h3>2. Foundation 6.9.0</h3>
+                <iframe
+                    title="Exemplo do componente em Foundation 6.9.0"
+                    style="width: 100%; height: 185px; border: 0; display: block;"
+                    srcdoc='<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css"><style>body{margin:0;padding:4px;background:transparent;}</style></head><body><div class="callout secondary"><h4>Hotel para Cães — Estadia 24h</h4><p>Alojamento climatizado, vigilância permanente e recreio exterior diário.</p><a href="contactos.html" target="_top" class="button">Fazer marcação</a></div></body></html>'>
+                </iframe>
+
+                <h3>3. W3.CSS</h3>
+                <iframe
+                    title="Exemplo do componente em W3.CSS 4"
+                    style="width: 100%; height: 185px; border: 0; display: block;"
+                    srcdoc='<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><style>body{margin:0;padding:4px;background:transparent;}</style></head><body><div class="w3-card w3-padding w3-white"><h4>Hotel para Cães — Estadia 24h</h4><p>Alojamento climatizado, vigilância permanente e recreio exterior diário.</p><a href="contactos.html" target="_top" class="w3-button w3-teal">Fazer marcação</a></div></body></html>'>
+                </iframe>
+            </section>
