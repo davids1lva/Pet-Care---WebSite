@@ -127,3 +127,69 @@
                     </table>
                 </div>
             </section>
+            <section aria-labelledby="metodo-medicao">
+                            <h2 id="metodo-medicao">Método de Comparação e Avaliação</h2>
+                            <p>A comparação utiliza seis critérios, divididos em dois grupos. Esta distinção evita apresentar apreciações qualitativas como se fossem medições numéricas.</p>
+            
+                            <h3>Critérios quantitativos</h3>
+                            <ol>
+                                <li><strong>KB transferidos:</strong> valor observado no separador <em>Network</em> (Rede) das DevTools, com a opção <em>Disable cache</em> ativa. Foram registados os valores correspondentes às folhas de estilo das frameworks. Os valores apresentados na tabela são os valores medidos nesta experiência.</li>
+                                <li><strong>Linhas de código HTML e CSS:</strong> contagem das linhas utilizadas na implementação do mesmo cartão (título, texto e botão) e das regras CSS adicionais de personalização. Para a comparação ser justa, deve ser aplicado o mesmo critério de contagem às três versões: contar apenas as linhas de código efetivamente necessárias ao componente, excluindo linhas em branco e comentários.</li>
+                            </ol>
+            
+                            <h3>Critérios qualitativos</h3>
+                            <ol>
+                                <li><strong>Documentação e comunidade:</strong> apreciação da organização e clareza da documentação oficial e da facilidade em encontrar exemplos e instruções relevantes.</li>
+                                <li><strong>Personalização de tema:</strong> apreciação da facilidade de adaptar cores, espaçamentos, bordas e outros aspetos visuais ao estilo do PetCare.</li>
+                                <li><strong>Acessibilidade por defeito:</strong> apreciação dos recursos disponibilizados pelas frameworks, complementada pela verificação manual da navegação por teclado, da visibilidade do foco e da estrutura semântica do componente. Esta apreciação não equivale a uma certificação de conformidade com as WCAG.</li>
+                            </ol>
+                        </section>
+                    </main>
+            
+                    <footer>
+                        <p>© 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
+                        <p>
+                            <a href="contactos.html">Contactos</a> |
+                            <a href="acessibilidade.html">Declaração de Acessibilidade</a>
+                        </p>
+                    </footer>
+            
+                    <script>
+                        const botaoMenu = document.querySelector(".botao-menu");
+                        const menuPrincipal = document.querySelector("#menu-principal");
+            
+                        if (botaoMenu && menuPrincipal) {
+                            function fecharMenu() {
+                                menuPrincipal.classList.remove("menu-aberto");
+                                botaoMenu.setAttribute("aria-expanded", "false");
+                                botaoMenu.setAttribute("aria-label", "Abrir menu de navegação");
+                                botaoMenu.textContent = "☰";
+                            }
+            
+                            botaoMenu.addEventListener("click", function () {
+                                const aberto = menuPrincipal.classList.toggle("menu-aberto");
+                                botaoMenu.setAttribute("aria-expanded", String(aberto));
+                                botaoMenu.setAttribute(
+                                    "aria-label",
+                                    aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
+                                );
+                                botaoMenu.textContent = aberto ? "✕" : "☰";
+                            });
+            
+                            document.addEventListener("click", function (evento) {
+                                const clicouNoMenu = menuPrincipal.contains(evento.target);
+                                const clicouNoBotao = botaoMenu.contains(evento.target);
+                                if (!clicouNoMenu && !clicouNoBotao) {
+                                    fecharMenu();
+                                }
+                            });
+            
+                            document.addEventListener("keydown", function (evento) {
+                                if (evento.key === "Escape") {
+                                    fecharMenu();
+                                }
+                            });
+                        }
+                    </script>
+                </body>
+            </html>
