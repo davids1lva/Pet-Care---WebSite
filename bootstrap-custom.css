@@ -1,4 +1,3 @@
-
 /* E6 — Personalizações de componentes Bootstrap */
 
 /* 1. Botões */
@@ -15,7 +14,7 @@
 
 /* 3. Cartões */
 .card {
-    border: 1px solid #C9DDD6;
+    border: 3.5px solid #C9DDD6;
     border-radius: 8px;
 }
 
@@ -68,10 +67,55 @@
 }
 
 /* Cartões adaptados às colunas Bootstrap */
-.equipa-cartoes.row > [class*="col-"] > .cartao-equipa {
+.equipa-cartoes.row > [class*="col-"] > .card.cartao-equipa {
     display: block;
     width: 100%;
     max-width: 100%;
     min-height: 100%;
     margin: 0;
+}
+
+/* Centrar legendas das fotos da galeria */
+.grelha-galeria.row figcaption {
+    text-align: center;
+}
+
+/* E7 — Isolamento visual da página de comparação face ao Foundation e W3.CSS */
+.pagina-comparacao .cabecalho-pagina {
+    text-align: left !important;
+}
+
+.pagina-comparacao h1,
+.pagina-comparacao h2,
+.pagina-comparacao h3,
+.pagina-comparacao h4,
+.pagina-comparacao p,
+.pagina-comparacao li {
+    letter-spacing: normal !important;
+}
+
+.pagina-comparacao h1 {
+    font-size: 2rem !important;
+    line-height: 1.25 !important;
+}
+
+.pagina-comparacao h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+}
+
+.pagina-comparacao h3 {
+    font-size: 1.2rem !important;
+    line-height: 1.35 !important;
+}
+
+.cabecalho-site nav ul {
+    margin: 0 !important;
+    list-style: none !important;
+}
+
+.cabecalho-site nav a {
+    font-size: inherit !important;
+    line-height: normal !important;
+    text-decoration: none !important;
 }
