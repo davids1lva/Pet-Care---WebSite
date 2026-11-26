@@ -63,21 +63,29 @@
                 <iframe
                     title="Exemplo do componente em Foundation 6.9.0"
                     style="width: 100%; height: 185px; border: 0; display: block;"
-                    srcdoc='<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css"><style>body{margin:0;padding:4px;background:transparent;}</style></head><body><div class="callout secondary"><h4>Hotel para Cães — Estadia 24h</h4><p>Alojamento climatizado, vigilância permanente e recreio exterior diário.</p><a href="contactos.html" target="_top" class="button">Fazer marcação</a></div></body></html>'>
+                    srcdoc='<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css"><style>body{margin:0;padding:4px;background:transparent;}</style></head><body><div class="callout secondary">
+<h4>Hotel para Cães — Estadia 24h</h4>
+<p>Alojamento climatizado, vigilância permanente e recreio exterior diário.</p>
+<a href="contactos.html" target="_top" class="button">Fazer marcação</a>
+</div></body></html>'>
                 </iframe>
 
                 <h3>3. W3.CSS</h3>
                 <iframe
                     title="Exemplo do componente em W3.CSS 4"
                     style="width: 100%; height: 185px; border: 0; display: block;"
-                    srcdoc='<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><style>body{margin:0;padding:4px;background:transparent;}</style></head><body><div class="w3-card w3-padding w3-white"><h4>Hotel para Cães — Estadia 24h</h4><p>Alojamento climatizado, vigilância permanente e recreio exterior diário.</p><a href="contactos.html" target="_top" class="w3-button w3-teal">Fazer marcação</a></div></body></html>'>
+                    srcdoc='<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><style>body{margin:0;padding:4px;background:transparent;}</style></head><body><div class="w3-card w3-padding w3-white">
+<h4>Hotel para Cães — Estadia 24h</h4>
+<p>Alojamento climatizado, vigilância permanente e recreio exterior diário.</p>
+<a href="contactos.html" target="_top" class="w3-button w3-teal">Fazer marcação</a>
+</div></body></html>'>
                 </iframe>
             </section>
             <section aria-labelledby="tabela-comparativa">
-                <h2 id="tabela-comparativa">Tabela Comparativa (3 Critérios Quantitativos e 3 Qualitativos)</h2>
+                <h2 id="tabela-comparativa">Tabela comparativa</h2>
                 <div class="table-responsive">
                     <table class="table table-striped">
-                        <caption style="caption-side: top;">Comparação entre Bootstrap, Foundation e W3.CSS. Os valores numéricos são quantitativos; os restantes critérios correspondem a apreciações qualitativas.</caption>
+                        <caption style="caption-side: top;">Comparação entre Bootstrap, Foundation e W3.CSS. Três critérios quantitativos e três apreciações qualitativas.</caption>
                         <thead>
                             <tr>
                                 <th scope="col">Critério</th>
@@ -88,63 +96,57 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>KB transferidos (CSS minificado)</td>
-                                <td>23,7 kB</td>
-                                <td>15,0 kB</td>
-                                <td>5,8 kB</td>
+                                <th scope="row">KB transferidos (CSS minificado)</th>
+                                <td>30,87 kB</td>
+                                <td>17,60 kB</td>
+                                <td>5,26 kB</td>
                             </tr>
                             <tr>
-                                <td>Linhas de código HTML do componente</td>
-                                <td>7 linhas</td>
-                                <td>5 linhas</td>
-                                <td>5 linhas</td>
+                                <th scope="row">Linhas de código HTML do componente</th>
+                                <td>7</td>
+                                <td>5</td>
+                                <td>5</td>
                             </tr>
                             <tr>
-                                <td>Linhas de código CSS de personalização</td>
-                                <td>8 linhas (em <code>bootstrap-custom.css</code>)</td>
-                                <td>6 linhas (cor de botão e borda)</td>
-                                <td>4 linhas (ajuste de raio e foco)</td>
+                                <th scope="row">Linhas de código CSS de personalização</th>
+                                <td>12 linhas</td>
+                                <td>0 linhas</td>
+                                <td>0 linhas</td>
                             </tr>
                             <tr>
-                                <td>Documentação e comunidade</td>
-                                <td>Muito extensa, exemplos prontos e atualizados</td>
-                                <td>Completa, mas com ecossistema menor</td>
-                                <td>Direta e simples, focada em exemplos básicos</td>
+                                <th scope="row">Documentação e comunidade</th>
+                                <td><a href="https://getbootstrap.com/docs/5.3/components/card/">Card</a> e <a href="https://getbootstrap.com/docs/5.3/components/buttons/">botões</a></td>
+                                <td><a href="https://get.foundation/sites/docs/callout.html">Callout</a> e <a href="https://get.foundation/sites/docs/button.html">botões</a></td>
+                                <td><a href="https://www.w3schools.com/w3css/w3css_cards.asp">Cartões</a> e <a href="https://www.w3schools.com/w3css/w3css_buttons.asp">botões</a></td>
                             </tr>
                             <tr>
-                                <td>Personalização de tema</td>
-                                <td>Alta (variáveis CSS <code>--bs-*</code> e utilitários)</td>
-                                <td>Alta (sobreposição de classes ou Sass)</td>
-                                <td>Média (classes de cor pré-definidas)</td>
+                                <th scope="row">Personalização de tema</th>
+                                <td>Variáveis CSS do botão e regras próprias para o cartão.</td>
+                                <td>Configuração com Sass e regras CSS que alteram os estilos compilados.</td>
+                                <td>Classes de cor e de espaçamento, combináveis com folhas de tema ou CSS próprio.</td>
                             </tr>
                             <tr>
-                                <td>Acessibilidade por defeito (apreciação qualitativa)</td>
-                                <td>Disponibiliza componentes e atributos úteis; o foco, a semântica e o contraste devem ser verificados na implementação.</td>
-                                <td>Disponibiliza componentes e padrões de interação; o foco, a semântica e o contraste devem ser verificados na implementação.</td>
-                                <td>Disponibiliza classes e estilos básicos; o foco, a semântica e o contraste exigem validação na implementação.</td>
+                                <th scope="row">Acessibilidade por defeito (apreciação qualitativa)</th>
+                                <td>A ligação tem texto explícito. O contraste de 4,50:1 em repouso atinge o limiar para texto normal.</td>
+                                <td>A ligação tem texto explícito. O contraste de 4,65:1 em repouso atinge o limiar para texto normal.</td>
+                                <td>A ligação tem texto explícito. O contraste de 3,67:1 em repouso fica abaixo do limiar para texto normal.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
             <section aria-labelledby="metodo-medicao">
-                            <h2 id="metodo-medicao">Método de Comparação e Avaliação</h2>
-                            <p>A comparação utiliza seis critérios, divididos em dois grupos. Esta distinção evita apresentar apreciações qualitativas como se fossem medições numéricas.</p>
-            
-                            <h3>Critérios quantitativos</h3>
-                            <ol>
-                                <li><strong>KB transferidos:</strong> valor observado no separador <em>Network</em> (Rede) das DevTools, com a opção <em>Disable cache</em> ativa. Foram registados os valores correspondentes às folhas de estilo das frameworks. Os valores apresentados na tabela são os valores medidos nesta experiência.</li>
-                                <li><strong>Linhas de código HTML e CSS:</strong> contagem das linhas utilizadas na implementação do mesmo cartão (título, texto e botão) e das regras CSS adicionais de personalização. Para a comparação ser justa, deve ser aplicado o mesmo critério de contagem às três versões: contar apenas as linhas de código efetivamente necessárias ao componente, excluindo linhas em branco e comentários.</li>
-                            </ol>
-            
-                            <h3>Critérios qualitativos</h3>
-                            <ol>
-                                <li><strong>Documentação e comunidade:</strong> apreciação da organização e clareza da documentação oficial e da facilidade em encontrar exemplos e instruções relevantes.</li>
-                                <li><strong>Personalização de tema:</strong> apreciação da facilidade de adaptar cores, espaçamentos, bordas e outros aspetos visuais ao estilo do PetCare.</li>
-                                <li><strong>Acessibilidade por defeito:</strong> apreciação dos recursos disponibilizados pelas frameworks, complementada pela verificação manual da navegação por teclado, da visibilidade do foco e da estrutura semântica do componente. Esta apreciação não equivale a uma certificação de conformidade com as WCAG.</li>
-                            </ol>
-                        </section>
-                    </main>
+                <h2 id="metodo-medicao">Método de comparação</h2>
+                <ol>
+                    <li><strong>Transferência de CSS.</strong> Para cada endereço CSS usado nos exemplos, foi pedido o ficheiro com <code>Accept-Encoding: gzip</code>. Contaram-se os bytes do corpo comprimido, antes da descompressão, excluindo os cabeçalhos HTTP. Obtiveram-se 30 872, 17 604 e 5 256 bytes, respetivamente. Cada kB corresponde a 1 000 bytes.</li>
+                    <li><strong>Linhas de HTML.</strong> Contou-se o cartão desde a abertura até ao fecho do seu contentor. Cada contentor abre e fecha em linhas separadas. O título, o parágrafo e a ligação ocupam uma linha cada. Excluíram-se linhas vazias, o documento envolvente e o iframe.</li>
+                    <li><strong>CSS próprio.</strong> Contaram-se as linhas não vazias das regras de <code>bootstrap-custom.css</code> nos seletores específicos do cartão ou do botão. Cada uma das três regras (<code>.card</code>, <code>.btn-primary</code> e <code>.btn-primary:hover</code>) ocupa quatro linhas: a abertura com o seletor, duas declarações e o fecho. Nos exemplos Foundation e W3.CSS só se ajustou o corpo do documento. Excluíram-se os comentários, o CSS da framework, os estilos inline e as regras gerais da página.</li>
+                    <li><strong>Documentação e comunidade.</strong> Verificou-se se existiam exemplos públicos do cartão e do botão. As ligações na tabela remetem para a documentação consultada. A dimensão das comunidades não foi medida.</li>
+                    <li><strong>Personalização de tema.</strong> Identificaram-se os mecanismos disponíveis para alterar as cores e o aspeto do cartão.</li>
+                    <li><strong>Acessibilidade por defeito.</strong> Verificou-se no HTML que as três ligações têm o texto «Fazer marcação». Recolheram-se das folhas de estilo as cores do texto e do fundo da ligação em repouso, antes das personalizações PetCare. Calculou-se o rácio WCAG entre as luminâncias relativas. Para o limiar de 4,5:1 do texto normal, Bootstrap e Foundation atingem o valor exigido e a combinação branca sobre <code>w3-teal</code> fica abaixo. O cálculo abrange apenas estas combinações de cores.</li>
+                </ol>
+            </section>
+        </main>
             
                     <footer>
                         <p>© 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
