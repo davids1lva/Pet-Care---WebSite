@@ -97,9 +97,9 @@
                         <tbody>
                             <tr>
                                 <th scope="row">KB transferidos (CSS minificado)</th>
-                                <td>30,87 kB</td>
-                                <td>17,60 kB</td>
-                                <td>5,26 kB</td>
+                                <td>23,3 kB</td>
+                                <td>14,6 kB</td>
+                                <td>5,8 kB</td>
                             </tr>
                             <tr>
                                 <th scope="row">Linhas de código HTML do componente</th>
@@ -138,7 +138,7 @@
             <section aria-labelledby="metodo-medicao">
                 <h2 id="metodo-medicao">Método de comparação</h2>
                 <ol>
-                    <li><strong>Transferência de CSS.</strong> Para cada endereço CSS usado nos exemplos, foi pedido o ficheiro com <code>Accept-Encoding: gzip</code>. Contaram-se os bytes do corpo comprimido, antes da descompressão, excluindo os cabeçalhos HTTP. Obtiveram-se 30 872, 17 604 e 5 256 bytes, respetivamente. Cada kB corresponde a 1 000 bytes.</li>
+                    <li><strong>Transferência de CSS.</strong> No Chrome DevTools, abriu-se o separador Network, ativou-se Disable cache e recarregou-se a página com o filtro CSS. Registou-se a coluna Size para bootstrap.min.css, foundation.min.css e w3.css. As folhas de estilo próprias do PetCare foram excluídas.</li>
                     <li><strong>Linhas de HTML.</strong> Contou-se o cartão desde a abertura até ao fecho do seu contentor. Cada contentor abre e fecha em linhas separadas. O título, o parágrafo e a ligação ocupam uma linha cada. Excluíram-se linhas vazias, o documento envolvente e o iframe.</li>
                     <li><strong>CSS próprio.</strong> Contaram-se as linhas não vazias das regras de <code>bootstrap-custom.css</code> nos seletores específicos do cartão ou do botão. Cada uma das três regras (<code>.card</code>, <code>.btn-primary</code> e <code>.btn-primary:hover</code>) ocupa quatro linhas: a abertura com o seletor, duas declarações e o fecho. Nos exemplos Foundation e W3.CSS só se ajustou o corpo do documento. Excluíram-se os comentários, o CSS da framework, os estilos inline e as regras gerais da página.</li>
                     <li><strong>Documentação e comunidade.</strong> Verificou-se se existiam exemplos públicos do cartão e do botão. As ligações na tabela remetem para a documentação consultada. A dimensão das comunidades não foi medida.</li>
