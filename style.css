@@ -1,0 +1,1392 @@
+/* PetCare — E4: estilos consolidados por secção. */
+/* Mantém o modelo de caixa, a tabela, o formulário e o foco de teclado. */
+
+/* 1. Tipografia e elementos base */
+h1 {
+    color: var(--cor-principal);
+    font-size: 2rem;
+}
+
+h2 {
+    color: var(--cor-verde);
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: var(--cor-terra);
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: var(--cor-verde);
+}
+
+a:hover {
+    color: var(--cor-principal);
+}
+
+body > header {
+    background-color: var(--cor-suave);
+    color: var(--cor-principal);
+}
+
+nav[aria-label="Navegação principal"] {
+    color: var(--cor-principal);
+}
+
+nav[aria-label="Navegação principal"] a {
+    color: var(--cor-principal);
+    font-weight: bold;
+}
+
+nav[aria-label="Navegação principal"] a:hover {
+    color: var(--cor-verde);
+}
+
+body > footer a:hover {
+    color: #D7F4E4;
+}
+
+textarea {
+    resize: none;
+}
+
+/* 2. Modelo de caixa e espaçamentos */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body > header, body > footer {
+    padding: 1rem 1.5rem;
+}
+
+main > section, main > article, main > article > section {
+    margin-bottom: 2rem;
+}
+
+section, article {
+    padding: 0.5rem 0;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+p, ul, ol, blockquote, figure {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+nav[aria-label="Navegação principal"] ul {
+    list-style-type: square;
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+nav[aria-label="Navegação principal"] li {
+    color: var(--cor-verde);
+    margin-bottom: 0.25rem;
+}
+
+figure {
+    color: var(--cor-texto);
+    padding: 1rem;
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-suave);
+}
+
+figcaption {
+    color: var(--cor-secundaria);
+    margin-top: 0.5rem;
+}
+
+blockquote {
+    background-color: var(--cor-suave);
+    color: var(--cor-texto);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem;
+    border-left: 4px solid var(--cor-verde);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    background-color: var(--cor-branco);
+}
+
+/* 3. Tabelas e formulários */
+caption {
+    padding: 0.75rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--cor-principal);
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--cor-secundaria);
+}
+
+th {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--cor-suave);
+}
+
+form {
+    max-width: 720px;
+    padding: 1.5rem;
+    border: 1px solid var(--cor-suave);
+    background-color: var(--cor-branco);
+}
+
+form p {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input:not([type="checkbox"]), select, textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.65rem;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 4px;
+    font: inherit;
+    color: var(--cor-texto);
+    background-color: var(--cor-branco);
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    padding: 0.7rem 1.3rem;
+    border: 2px solid var(--cor-principal);
+    border-radius: 4px;
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-verde);
+    border-color: var(--cor-verde);
+}
+
+details {
+    padding: 1rem;
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-branco);
+    margin-bottom: 1rem;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* E4 - Estilo do elemento HTML5 MARK */
+mark {
+    color: #FFFFFF;
+    background-color: #247A74;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+
+:focus-visible {
+    outline: 3px solid #245A58;
+    outline-offset: 3px;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] a:hover {
+    background-color: var(--cor-suave);
+    color: var(--cor-principal);
+}
+
+/* 4. Elementos semânticos e foco */
+.cabecalho-site nav[aria-label="Navegação principal"] a:focus-visible {
+    outline: 3px solid var(--cor-branco);
+    outline-offset: 3px;
+}
+
+main.pagina-inicial {
+    max-width: 1140px;
+    padding: 0;
+    background: #FFFFFF;
+    border-left: 1px solid #D8E6E0;
+    border-right: 1px solid #D8E6E0;
+}
+
+.pagina-inicial > section {
+    margin: 0;
+    padding: 2.4rem 2.6rem;
+    border-bottom: 1px solid #D8E6E0;
+}
+
+.pagina-inicial > section:nth-child(odd) {
+    background: #F1F8F5;
+}
+
+.pagina-inicial .hero-pet {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hero-pet .hero-conteudo,
+.hero-pet .hero-imagem {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.hero-pet .hero-conteudo {
+    padding-right: 2rem;
+}
+
+/* 5. Página inicial e apresentação */
+.hero-pet h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    color: #173F3D;
+    margin-bottom: 1.5rem;
+}
+
+.hero-pet .hero-descricao {
+    font-size: 1.05rem;
+    margin-bottom: 1.8rem;
+}
+.hero-pet .hero-acoes a {
+    display: inline-block;
+    margin: 0 0.7rem 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #176B66;
+    border-radius: 5px;
+    background-color: #176B66;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-pet .hero-acoes a + a {
+    background-color: #FFFFFF;
+    color: #176B66;
+}
+
+.hero-pet .hero-acoes a:hover,
+.hero-pet .hero-acoes a:focus-visible {
+    background-color: #0D4945;
+    border-color: #0D4945;
+    color: #FFFFFF;
+}
+
+.hero-pet .hero-imagem img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #D8E6E0;
+}
+
+.pagina-inicial h2 {
+    font-size: 1.8rem;
+    color: #174D48;
+}
+
+.pagina-inicial .testemunho-pet {
+    border: 1px solid #B6D3CB;
+    border-left: 5px solid #176B66;
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+    background: #FFFFFF;
+}
+
+.testemunho-pet p {
+    font-style: italic;
+}
+
+.testemunho-pet footer {
+    font-weight: bold;
+}
+
+body > footer a {
+    color: #FFFFFF;
+}
+
+:root {
+    --cor-texto: #1C2730;
+    --cor-principal: #173F3D;
+    --cor-verde: #176B66;
+    --cor-terra: #245A58;
+    --cor-secundaria: #245A58;
+    --cor-branco: #FFFFFF;
+    --cor-fundo: #F5F8F6;
+    --cor-suave: #E8F4F0;
+    font-family: Arial, Helvetica, sans-serif;
+    --agua: #176B66;
+    --agua-escuro: #0D4945;
+    --agua-claro: #E8F4F0;
+    --linha: #C9DDD6;
+}
+body {
+    color: var(--cor-texto);
+    line-height: 1.6;
+    margin: 0;
+    background: #F5F8F6;
+}
+
+body > header.cabecalho-site {
+    text-align: right;
+    border-bottom: 4px solid #D6EAE5;
+    background: var(--agua);
+    color: #fff;
+    padding: 1.15rem max(1.25rem, calc((100% - 1160px)/2));
+}
+
+.cabecalho-site .identidade-site {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 22%;
+    min-width: 170px;
+}
+
+.cabecalho-site .nome-site {
+    margin: 0 0 0.35rem;
+    line-height: 1.2;
+    margin-bottom: 0.15rem;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.cabecalho-site .subtitulo-site {
+    margin: 0 0 1.5rem;
+    margin-bottom: 0;
+    color: #F0FFF9;
+    font-size: .78rem;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] {
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFFFFF;
+    text-align: right;
+    width: 77%;
+    min-width: 0;
+}
+
+/* 6. Paleta de cores e cabeçalho */
+.cabecalho-site nav[aria-label="Navegação principal"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 0.88rem;
+    border-radius: 6px;
+    background: transparent;
+    margin: 2px 0;
+    padding: .55rem .66rem;
+    white-space: nowrap;
+}
+.cabecalho-site nav[aria-label="Navegação principal"] a[aria-current="page"] {
+    background: #0D4945;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] a:hover,
+.cabecalho-site nav[aria-label="Navegação principal"] a:focus-visible {
+    color: #FFFFFF;
+    background: #0D4945;
+}
+
+main {
+    color: var(--cor-texto);
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1160px;
+    background: #fff;
+    padding: 0;
+    border-right: 1px solid var(--linha);
+    border-left: 1px solid var(--linha);
+}
+
+main:not(.pagina-inicial) > section:not(.cabecalho-pagina),
+main:not(.pagina-inicial) > .sobre-colunas,
+main.pagina-artigo > article > :not(.cabecalho-pagina) {
+    margin: 0;
+    padding: 2rem 2.5rem;
+}
+
+main:not(.pagina-inicial) > .cabecalho-pagina,
+main.pagina-artigo > article > .cabecalho-pagina {
+    margin: 0;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--agua-claro);
+    border-bottom: 1px solid var(--linha);
+    position: relative;
+}
+
+.cabecalho-pagina h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 0 auto 1rem;
+    max-width: 880px;
+    color: #173F3D;
+}
+
+.cabecalho-pagina p {
+    font-size: 1.1rem;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.marca-pata {
+    position: absolute;
+    right: 4%;
+    top: 25%;
+    font-size: 4rem;
+    opacity: .3;
+}
+
+main:not(.pagina-inicial) h2 {
+    color: #174D48;
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+}
+
+main:not(.pagina-inicial) > section + section {
+    border-top: 1px solid var(--linha);
+}
+
+.seccao-servicos .cartao-servico {
+    border: 1px solid var(--linha);
+    background: #fff;
+    border-radius: 6px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.cartao-servico > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 26%;
+    max-width: 240px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cartao-servico > .texto-servico {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    padding-left: 1.4rem;
+}
+
+.cartao-servico h3 {
+    color: #173F3D;
+    margin-bottom: .4rem;
+}
+
+.seccao-tarifas {
+    background: #F1F8F5;
+}
+
+.seccao-tarifas table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.seccao-tarifas td, .seccao-tarifas th {
+    border: 1px solid #9FBEB5;
+}
+
+.grelha-galeria {
+    text-align: center;
+}
+
+.grelha-galeria figure {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin: 0 1.5% 2rem;
+}
+
+.grelha-galeria figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid var(--linha);
+}
+.grelha-galeria figcaption {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin: .75rem 0;
+}
+
+.equipa-cartoes {
+    text-align: center;
+}
+
+.cartao-equipa {
+    display: inline-block;
+    width: 31%;
+    margin: 0 .7% 1.25rem;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid var(--linha);
+    padding: .85rem;
+    margin: 0 .7% 1.25rem;
+    border-radius: 6px;
+    min-height: 220px;
+}
+
+/* 7. Serviços, galeria e equipa */
+.cartao-equipa > img {
+    display: inline-block;
+    width: 34%;
+    height: auto;
+    max-height: 145px;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 4px;
+}
+
+.cartao-equipa .equipa-descricao {
+    display: inline-block;
+    width: 63%;
+    padding-left: .7rem;
+    vertical-align: top;
+    font-size: .9rem;
+}
+
+.cartao-equipa h3 {
+    color: #173F3D;
+    font-size: 1.12rem;
+}
+
+.sobre-colunas > section {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    padding: .8rem;
+}
+
+.local-destaque {
+    border: 1px solid var(--linha);
+    background: #EAF5F1;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 1rem 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.seccao-contacto .dados-contacto {
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+    padding-right: 1.5rem;
+}
+
+.seccao-contacto .mapa-contactos {
+    display: inline-block;
+    width: 51%;
+    vertical-align: top;
+    background: #EAF5F1;
+    padding: .75rem;
+    border: 1px solid var(--linha);
+    border-radius: 5px;
+}
+
+.mapa-contactos img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.seccao-formulario form {
+    font-size: 0;
+}
+
+.seccao-formulario form > p.campo-formulario {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    margin-right: 1%;
+}
+
+.seccao-formulario form > p.campo-formulario label {
+    display: inline-block;
+    margin-bottom: .3rem;
+    font-weight: 700;
+}
+
+.seccao-formulario form > p.campo-mensagem,
+.seccao-formulario form > p.campo-consentimento,
+.seccao-formulario form > p.campo-enviar {
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+}
+
+.seccao-formulario input:not([type="checkbox"]),
+.seccao-formulario select,
+.seccao-formulario textarea {
+    width: 98%;
+    max-width: 100%;
+}
+
+.seccao-formulario .campo-enviar {
+    text-align: center;
+}
+
+.seccao-formulario button {
+    min-width: 235px;
+}
+
+.cartoes-acessibilidade {
+    padding: 1.5rem !important;
+}
+.cartao-acessibilidade {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    min-height: 500px;
+    border: 1px solid var(--linha);
+    padding: 1.35rem;
+    margin: 1% 1.25%;
+    border-radius: 5px;
+}
+
+.pagina-artigo > article {
+    padding: 0;
+    margin: 0;
+}
+
+/* 8. Contactos, artigo e acessibilidade */
+.pagina-artigo .artigo-introducao {
+    border-bottom: 1px solid var(--linha);
+}
+
+.pagina-artigo > article > nav[aria-label="Índice do artigo"] {
+    background: #F1F8F5;
+}
+
+.pagina-artigo > article > section {
+    border-top: 1px solid var(--linha);
+}
+
+.pagina-artigo a {
+    overflow-wrap: anywhere;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] li {
+    display: inline-block;
+    margin: .15rem;
+}
+
+body > footer {
+    text-align: center;
+    background-color: #176B66;
+    color: #FFFFFF;
+    padding: 1.25rem;
+}
+
+.pagina-contactos .seccao-contacto > h2 {
+    margin: 0 0 1.3rem;
+}
+
+.pagina-contactos .contactos-linha {
+    font-size: 0;
+}
+
+.pagina-contactos .contactos-linha > .dados-contacto,
+.pagina-contactos .contactos-linha > .mapa-contactos {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 48%;
+    margin: 0;
+    border: 1px solid #9FBEB5;
+    border-radius: 4px;
+    background: #E8F4F0;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.pagina-contactos .contactos-linha > .dados-contacto {
+    margin-right: 3%;
+    padding: 1rem;
+}
+
+.pagina-contactos .contactos-linha > .mapa-contactos {
+    padding: 0;
+    min-height: 320px;
+    text-align: center;
+}
+
+.pagina-contactos .mapa-contactos img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.pagina-contactos .contacto-item {
+    margin-bottom: 1.1rem;
+    font-size: 0;
+}
+
+.pagina-contactos .contacto-icone {
+    display: inline-block;
+    width: 12%;
+    vertical-align: top;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #176B66;
+}
+
+.pagina-contactos .contacto-item-texto {
+    display: inline-block;
+    width: 87%;
+    vertical-align: top;
+    font-size: 1rem;
+}
+
+.pagina-contactos .contacto-item-texto strong {
+    display: block;
+    margin-bottom: .25rem;
+    color: #173F3D;
+}
+
+.pagina-contactos .contacto-item-texto p {
+    margin: .1rem 0;
+}
+
+.pagina-contactos .contacto-item-texto ul {
+    margin: .3rem 0 0;
+    padding-left: 1.25rem;
+}
+
+.pagina-contactos .seccao-formulario form > p.campo-formulario {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.pagina-contactos .seccao-formulario form > p.campo-formulario:nth-of-type(even) {
+    margin-right: 0;
+}
+
+.pagina-contactos .seccao-formulario .campo-mensagem textarea {
+    width: 100%;
+}
+
+.pagina-contactos .seccao-formulario .campo-enviar {
+    text-align: center;
+}
+
+
+/* ================================================================
+   E5 — DESIGN RESPONSIVO / MOBILE-FIRST
+   Regras base: telemóveis. Progressão por min-width: 480, 768, 1024 px.
+   As regras desta secção adaptam os layouts da E4 sem alterar o HTML.
+   ================================================================ */
+
+/* E5.1 — Base mobile: elementos fluidos, sem largura fixa a transbordar. */
+html {
+    min-width: 0;
+}
+
+body {
+    min-width: 0;
+}
+
+main,
+main.pagina-inicial {
+    width: 100%;
+    max-width: 1160px;
+    min-width: 0;
+}
+
+main:not(.pagina-inicial) > section:not(.cabecalho-pagina),
+main:not(.pagina-inicial) > .sobre-colunas,
+main.pagina-artigo > article > :not(.cabecalho-pagina),
+.pagina-inicial > section {
+    padding: 1.25rem 1rem;
+}
+
+main:not(.pagina-inicial) > .cabecalho-pagina,
+main.pagina-artigo > article > .cabecalho-pagina {
+    padding: 2rem 1rem;
+}
+
+.cabecalho-pagina h1,
+.hero-pet h1 {
+    font-size: 1.65rem;
+    overflow-wrap: anywhere;
+}
+
+/* E5.2 — Navegação com Flexbox e alvos de toque >= 24 x 24 px. */
+body > header.cabecalho-site {
+    padding: 1rem;
+    text-align: center;
+}
+
+.cabecalho-site .identidade-site,
+.cabecalho-site nav[aria-label="Navegação principal"] {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+}
+
+.cabecalho-site .identidade-site {
+    margin-bottom: 0.7rem;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0.3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] li {
+    display: block;
+    flex: 1 1 calc(50% - 0.3rem);
+    min-width: 0;
+    margin: 0;
+}
+
+.cabecalho-site nav[aria-label="Navegação principal"] a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 24px;
+    padding: 0.65rem 0.4rem;
+    white-space: normal;
+    line-height: 1.25;
+    text-align: center;
+}
+
+/* E5.3 — Imagens responsivas: aplicadas a várias imagens reais. */
+.hero-pet .hero-imagem img,
+.cartao-servico > img,
+.grelha-galeria figure img,
+.cartao-equipa > img,
+.pagina-contactos .mapa-contactos img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-pet .hero-conteudo,
+.hero-pet .hero-imagem,
+.cartao-servico > img,
+.cartao-servico > .texto-servico,
+.cartao-equipa,
+.cartao-equipa > img,
+.cartao-equipa .equipa-descricao,
+.sobre-colunas > section,
+.pagina-contactos .contactos-linha > .dados-contacto,
+.pagina-contactos .contactos-linha > .mapa-contactos,
+.seccao-formulario form > p.campo-formulario,
+.pagina-contactos .seccao-formulario form > p.campo-formulario,
+.cartao-acessibilidade {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero-pet .hero-conteudo,
+.cartao-servico > .texto-servico,
+.cartao-equipa .equipa-descricao {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hero-pet .hero-imagem {
+    margin-top: 1.2rem;
+}
+
+.cartao-servico > img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.cartao-equipa > img {
+    width: min(100%, 220px);
+    max-height: none;
+    margin-bottom: 0.8rem;
+}
+
+.cartao-equipa {
+    min-height: 0;
+}
+
+.cartao-acessibilidade {
+    min-height: 0;
+    margin-bottom: 1rem;
+}
+
+/* E5.4 — Galeria em CSS Grid: uma coluna no telemóvel. */
+.grelha-galeria {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    text-align: left;
+}
+
+.grelha-galeria figure {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.grelha-galeria figure img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+/* E5.5 — Formulário e tabela para ecrãs estreitos. */
+form {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.seccao-formulario form > p.campo-formulario,
+.pagina-contactos .seccao-formulario form > p.campo-formulario:nth-of-type(even) {
+    width: 100%;
+    margin-right: 0;
+}
+
+.seccao-formulario input:not([type="checkbox"]),
+.seccao-formulario select,
+.seccao-formulario textarea {
+    width: 100%;
+}
+
+.seccao-formulario button,
+button,
+summary {
+    min-width: 24px;
+    min-height: 44px;
+}
+
+input[type="checkbox"] {
+    min-width: 24px;
+    min-height: 24px;
+    vertical-align: middle;
+}
+
+.pagina-contactos .contactos-linha > .dados-contacto {
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.pagina-contactos .contactos-linha > .mapa-contactos {
+    min-height: 0;
+}
+
+.pagina-contactos .mapa-contactos img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.seccao-tarifas table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.seccao-tarifas th,
+.seccao-tarifas td {
+    overflow-wrap: anywhere;
+    word-break: normal;
+    padding: 0.45rem 0.3rem;
+    font-size: 0.82rem;
+}
+
+.pagina-artigo a,
+.pagina-contactos a,
+.pagina-artigo p {
+    overflow-wrap: anywhere;
+}
+
+/* Ponto de rutura 1: telemóveis maiores (>= 480 px). */
+@media (min-width: 480px) {
+    main:not(.pagina-inicial) > section:not(.cabecalho-pagina),
+    main:not(.pagina-inicial) > .sobre-colunas,
+    main.pagina-artigo > article > :not(.cabecalho-pagina),
+    .pagina-inicial > section {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .cabecalho-site nav[aria-label="Navegação principal"] li {
+        flex-basis: calc(33.333% - 0.3rem);
+    }
+
+    .cabecalho-pagina h1,
+    .hero-pet h1 {
+        font-size: 1.9rem;
+    }
+
+    .seccao-tarifas th,
+    .seccao-tarifas td {
+        padding: 0.65rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Ponto de rutura 2: tablets (>= 768 px). */
+@media (min-width: 768px) {
+    body > header.cabecalho-site {
+        text-align: right;
+        padding: 1.15rem 1.5rem;
+    }
+
+    .cabecalho-site .identidade-site {
+        display: inline-block;
+        width: 22%;
+        margin-bottom: 0;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    .cabecalho-site nav[aria-label="Navegação principal"] {
+        display: inline-block;
+        width: 77%;
+        vertical-align: middle;
+        text-align: right;
+    }
+
+    .cabecalho-site nav[aria-label="Navegação principal"] li {
+        flex: 0 1 auto;
+    }
+
+    .cabecalho-site nav[aria-label="Navegação principal"] a {
+        padding: 0.65rem 0.42rem;
+    }
+
+    main:not(.pagina-inicial) > section:not(.cabecalho-pagina),
+    main:not(.pagina-inicial) > .sobre-colunas,
+    main.pagina-artigo > article > :not(.cabecalho-pagina) {
+        padding: 2rem 2.5rem;
+    }
+
+    .pagina-inicial > section {
+        padding: 2.4rem 2.6rem;
+    }
+
+    main:not(.pagina-inicial) > .cabecalho-pagina,
+    main.pagina-artigo > article > .cabecalho-pagina {
+        padding: 3rem 2rem;
+    }
+
+    .cabecalho-pagina h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-pet .hero-conteudo,
+    .hero-pet .hero-imagem {
+        display: inline-block;
+        width: 48%;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    .hero-pet .hero-conteudo {
+        padding-right: 2rem;
+    }
+
+    .hero-pet .hero-imagem {
+        margin-top: 0;
+    }
+
+    .grelha-galeria {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .cartao-servico > img {
+        display: inline-block;
+        width: 26%;
+        max-width: 240px;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+    .cartao-servico > .texto-servico {
+        display: inline-block;
+        width: 70%;
+        padding-left: 1.4rem;
+        vertical-align: middle;
+    }
+
+    .equipa-cartoes {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.75rem;
+    }
+
+    .cartao-equipa {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cartao-equipa > img {
+        display: block;
+        width: min(100%, 160px);
+    }
+
+    .sobre-colunas > section {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+
+    .pagina-contactos .contactos-linha > .dados-contacto,
+    .pagina-contactos .contactos-linha > .mapa-contactos {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+    }
+
+    .pagina-contactos .contactos-linha > .dados-contacto {
+        margin-right: 3%;
+        margin-bottom: 0;
+    }
+
+    .seccao-formulario form > p.campo-formulario,
+    .pagina-contactos .seccao-formulario form > p.campo-formulario {
+        display: inline-block;
+        width: 48%;
+        margin-right: 2%;
+        vertical-align: top;
+    }
+
+    .pagina-contactos .seccao-formulario form > p.campo-formulario:nth-of-type(even) {
+        display: inline-block;
+        width: 48%;
+        margin-right: 0;
+    }
+
+    .cartoes-acessibilidade {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .cartao-acessibilidade {
+        width: 100%;
+        margin: 0;
+        min-height: 0;
+    }
+
+    .seccao-tarifas th,
+    .seccao-tarifas td {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Ponto de rutura 3: desktop (>= 1024 px). */
+@media (min-width: 1024px) {
+    body > header.cabecalho-site {
+        padding: 1.15rem max(1.25rem, calc((100% - 1160px) / 2));
+    }
+
+    .cabecalho-site nav[aria-label="Navegação principal"] ul {
+        justify-content: flex-end;
+    }
+
+    .cabecalho-site nav[aria-label="Navegação principal"] a {
+        padding: 0.65rem 0.66rem;
+    }
+
+    .hero-pet h1 {
+        font-size: 2.1rem;
+    }
+
+    .cartao-equipa {
+        min-height: 220px;
+    }
+}
+
+/* E6 — Menu hambúrguer com cabeçalho fixo no telemóvel */
+
+/* O botão não aparece no computador */
+.botao-menu {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    /* Cabeçalho fixo no topo */
+    body > header.cabecalho-site {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 76px;
+        padding: 0.75rem 1rem;
+        background-color: #176B66;
+    }
+
+    /* Nome e subtítulo do PetCare */
+    .cabecalho-site .identidade-site {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        padding: 0 44px;
+        text-align: center;
+    }
+
+    .cabecalho-site .nome-site {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .cabecalho-site .subtitulo-site {
+        font-size: 0.7rem;
+        margin: 0;
+    }
+
+    /* Botão hambúrguer dentro do cabeçalho */
+    .botao-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        z-index: 1002;
+
+        width: 44px;
+        height: 44px;
+        padding: 0;
+
+        border: 2px solid #FFFFFF;
+        border-radius: 6px;
+        background-color: #0D4945;
+        color: #FFFFFF;
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+
+    /* Menu escondido por defeito */
+    .cabecalho-site nav[aria-label="Navegação principal"] {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1001;
+
+        width: 100%;
+        max-height: calc(100dvh - 76px);
+        overflow-y: auto;
+
+        padding: 1rem;
+        background-color: #176B66;
+        border-bottom: 3px solid #0D4945;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Menu visível quando aberto */
+    .cabecalho-site nav[aria-label="Navegação principal"].menu-aberto {
+        display: block;
+    }
+
+    /* Links apresentados verticalmente */
+    .cabecalho-site nav[aria-label="Navegação principal"] ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0.4rem;
+    }
+
+    .cabecalho-site nav[aria-label="Navegação principal"] li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cabecalho-site nav[aria-label="Navegação principal"] a {
+        width: 100%;
+        min-height: 44px;
+        justify-content: flex-start;
+        text-align: left;
+        padding: 0.7rem 1rem;
+    }
+
+    /* Rodapé volta ao comportamento normal */
+    body > footer {
+        position: static;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
+}
