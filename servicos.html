@@ -2,6 +2,7 @@
 
 <html lang="pt">
     <head>
+    <link rel="icon" href="data:,">
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Conheça a lista completa de serviços da PetCare: hotel, banho e tosquia, passeios e alimentação." name="description">
@@ -16,7 +17,9 @@
 
 <!-- Personalizações da E6 -->
 <link href="bootstrap-custom.css" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="e8.css?v=7">
+<script src="petcare.js?v=3" defer></script>
+</head>
     <body>
         <header class="cabecalho-site">
             <div class="identidade-site">
@@ -49,7 +52,8 @@
     </ul>
 </nav>
 
-        </header>
+        <button type="button" id="tema" aria-pressed="false" hidden>Versão noturna</button>
+</header>
         <main class="pagina-servicos">
             <section class="cabecalho-pagina">
                 <h1>Os Nossos Serviços para Animais de Estimação</h1>
@@ -130,52 +134,7 @@
             </p>
         </footer>
         
-<script>
-    const botaoMenu = document.querySelector(".botao-menu");
-    const menuPrincipal = document.querySelector("#menu-principal");
 
-    if (botaoMenu && menuPrincipal) {
-
-        function fecharMenu() {
-            menuPrincipal.classList.remove("menu-aberto");
-            botaoMenu.setAttribute("aria-expanded", "false");
-            botaoMenu.setAttribute(
-                "aria-label",
-                "Abrir menu de navegação"
-            );
-            botaoMenu.textContent = "☰";
-        }
-
-        // Abrir e fechar ao clicar no botão
-        botaoMenu.addEventListener("click", function () {
-            const aberto = menuPrincipal.classList.toggle("menu-aberto");
-
-            botaoMenu.setAttribute("aria-expanded", String(aberto));
-            botaoMenu.setAttribute(
-                "aria-label",
-                aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
-            );
-            botaoMenu.textContent = aberto ? "✕" : "☰";
-        });
-
-        // Fechar ao clicar fora do menu e do botão
-        document.addEventListener("click", function (evento) {
-            const clicouNoMenu = menuPrincipal.contains(evento.target);
-            const clicouNoBotao = botaoMenu.contains(evento.target);
-
-            if (!clicouNoMenu && !clicouNoBotao) {
-                fecharMenu();
-            }
-        });
-
-        // Fechar ao carregar na tecla Escape
-        document.addEventListener("keydown", function (evento) {
-            if (evento.key === "Escape") {
-                fecharMenu();
-            }
-        });
-    }
-</script>
 
     </body>
 </html>
