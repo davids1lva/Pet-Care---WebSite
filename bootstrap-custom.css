@@ -119,3 +119,25 @@
     line-height: normal !important;
     text-decoration: none !important;
 }
+
+/* Cartões Bootstrap da equipa: grelha responsiva e retratos centrados. */
+.equipa-cartoes.row { display: flex; gap: 0; }
+.equipa-cartoes.row > [class*="col-"] > .card.cartao-equipa {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.equipa-cartoes .cartao-equipa > .card-img-top {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    max-height: none;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    align-self: center;
+    margin: 0;
+}
+.equipa-cartoes .cartao-equipa .card-body {
+    width: 100%;
+    padding: 1rem 0 0;
+}
