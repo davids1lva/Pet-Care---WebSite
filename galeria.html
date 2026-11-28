@@ -2,6 +2,7 @@
 
 <html lang="pt">
     <head>
+    <link rel="icon" href="data:,">
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Conheça as instalações e os animais felizes na galeria de fotografias da PetCare em Gaia." name="description">
@@ -16,7 +17,9 @@
 
         <!-- Personalizações da E6 -->
         <link href="bootstrap-custom.css" rel="stylesheet">
-            </head>
+            <link rel="stylesheet" href="e8.css?v=7">
+<script src="petcare.js?v=3" defer></script>
+</head>
             <body>
                 <header class="cabecalho-site">
                     <div class="identidade-site">
@@ -48,7 +51,8 @@
             </ul>
         </nav>
 
-                </header>
+                <button type="button" id="tema" aria-pressed="false" hidden>Versão noturna</button>
+</header>
                 <main class="pagina-galeria">
                     <section class="cabecalho-pagina">
                         <h1>Galeria de Fotos do Espaço PetCare</h1>
@@ -58,9 +62,14 @@
                         <h2>As Nossas Instalações e Hóspedes</h2>
                 
         <!-- E6 - Grelha responsiva Bootstrap na galeria -->
-        <div class="grelha-galeria row g-3">
+        <div id="filtros" class="filtros-galeria">
+<label for="filtro-galeria">Filtrar fotografias:</label>
+<select id="filtro-galeria" class="form-select" disabled><option value="todos">Todas</option><option value="hotel">Alojamento e recreio</option><option value="banho">Banho e tosquia</option><option value="passeio">Passeios</option></select>
+<noscript><p>Ative o JavaScript para filtrar as fotografias.</p></noscript>
+<p id="resultado-galeria" role="status"></p></div>
+<div class="grelha-galeria row g-3">
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" data-categoria="hotel">
                 <figure>
                     <img
                         src="imagens/Galeria/cao-relvado.png"
@@ -73,7 +82,7 @@
                 </figure>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" data-categoria="hotel">
                 <figure>
                     <img
                         src="imagens/Galeria/gato-deitado.png"
@@ -86,7 +95,7 @@
                 </figure>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" data-categoria="banho">
                 <figure>
                     <img
                         src="imagens/Galeria/cao-banho.png"
@@ -99,7 +108,7 @@
                 </figure>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" data-categoria="passeio">
                 <figure>
                     <img
                         src="imagens/Galeria/passeio-caes.png"
@@ -121,52 +130,7 @@
             <p> <a href="contactos.html">Contactos</a> | <a href="acessibilidade.html">Declaração de Acessibilidade</a> </p>
         </footer>
         
-<script>
-    const botaoMenu = document.querySelector(".botao-menu");
-    const menuPrincipal = document.querySelector("#menu-principal");
 
-    if (botaoMenu && menuPrincipal) {
-
-        function fecharMenu() {
-            menuPrincipal.classList.remove("menu-aberto");
-            botaoMenu.setAttribute("aria-expanded", "false");
-            botaoMenu.setAttribute(
-                "aria-label",
-                "Abrir menu de navegação"
-            );
-            botaoMenu.textContent = "☰";
-        }
-
-        // Abrir e fechar ao clicar no botão
-        botaoMenu.addEventListener("click", function () {
-            const aberto = menuPrincipal.classList.toggle("menu-aberto");
-
-            botaoMenu.setAttribute("aria-expanded", String(aberto));
-            botaoMenu.setAttribute(
-                "aria-label",
-                aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
-            );
-            botaoMenu.textContent = aberto ? "✕" : "☰";
-        });
-
-        // Fechar ao clicar fora do menu e do botão
-        document.addEventListener("click", function (evento) {
-            const clicouNoMenu = menuPrincipal.contains(evento.target);
-            const clicouNoBotao = botaoMenu.contains(evento.target);
-
-            if (!clicouNoMenu && !clicouNoBotao) {
-                fecharMenu();
-            }
-        });
-
-        // Fechar ao carregar na tecla Escape
-        document.addEventListener("keydown", function (evento) {
-            if (evento.key === "Escape") {
-                fecharMenu();
-            }
-        });
-    }
-</script>
 
     </body>
 </html>
