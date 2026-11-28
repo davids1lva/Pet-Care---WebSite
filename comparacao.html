@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
+    <link rel="icon" href="data:,">
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Comparação técnica do mesmo componente em Bootstrap, Foundation e W3.CSS no projeto PetCare." name="description">
@@ -11,7 +12,9 @@
         <link href="style.css" rel="stylesheet">
         <!-- Personalizações da E6/E7 -->
         <link href="bootstrap-custom.css" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="e8.css?v=7">
+<script src="petcare.js?v=3" defer></script>
+</head>
     <body>
         <header class="cabecalho-site">
             <div class="identidade-site">
@@ -39,7 +42,8 @@
                     <li><a aria-current="page" href="comparacao.html">Comparação</a></li>
                 </ul>
             </nav>
-        </header>
+        <button type="button" id="tema" aria-pressed="false" hidden>Versão noturna</button>
+</header>
 
         <main class="pagina-comparacao">
             <section class="cabecalho-pagina">
@@ -50,103 +54,27 @@
             <section aria-labelledby="exemplos-componente">
                 <h2 id="exemplos-componente">Mesmo Componente nas 3 Frameworks</h2>
 
-                <h3>1. Bootstrap 5.3.8</h3>
-                <div class="card mb-4" style="max-width: 100%; width: 100%;">
-                    <div class="card-body">
-                        <h4 class="card-title">Hotel para Cães — Estadia 24h</h4>
-                        <p class="card-text">Alojamento climatizado, vigilância permanente e recreio exterior diário.</p>
-                        <a href="contactos.html" class="btn btn-primary">Fazer marcação</a>
-                    </div>
-                </div>
-
-                <h3>2. Foundation 6.9.0</h3>
-                <iframe
-                    title="Exemplo do componente em Foundation 6.9.0"
-                    style="width: 100%; height: 185px; border: 0; display: block;"
-                    srcdoc='<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css"><style>body{margin:0;padding:4px;background:transparent;}</style></head><body><div class="callout secondary">
-<h4>Hotel para Cães — Estadia 24h</h4>
-<p>Alojamento climatizado, vigilância permanente e recreio exterior diário.</p>
-<a href="contactos.html" target="_top" class="button">Fazer marcação</a>
-</div></body></html>'>
-                </iframe>
-
-                <h3>3. W3.CSS</h3>
-                <iframe
-                    title="Exemplo do componente em W3.CSS 4"
-                    style="width: 100%; height: 185px; border: 0; display: block;"
-                    srcdoc='<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><style>body{margin:0;padding:4px;background:transparent;}</style></head><body><div class="w3-card w3-padding w3-white">
-<h4>Hotel para Cães — Estadia 24h</h4>
-<p>Alojamento climatizado, vigilância permanente e recreio exterior diário.</p>
-<a href="contactos.html" target="_top" class="w3-button w3-teal">Fazer marcação</a>
-</div></body></html>'>
-                </iframe>
+<h3>Bootstrap 5.3.8</h3><iframe class="demo-frame" title="Cartão personalizado em Bootstrap 5.3.8" src="comparacao/bootstrap.html"></iframe>
+<h3>Foundation 6.9.0</h3><iframe class="demo-frame" title="Cartão personalizado em Foundation 6.9.0" src="comparacao/foundation.html"></iframe>
+<h3>W3.CSS 4</h3><iframe class="demo-frame" title="Cartão personalizado em W3.CSS 4" src="comparacao/w3.html"></iframe>
             </section>
-            <section aria-labelledby="tabela-comparativa">
-                <h2 id="tabela-comparativa">Tabela comparativa</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <caption style="caption-side: top;">Comparação entre Bootstrap, Foundation e W3.CSS. Três critérios quantitativos e três apreciações qualitativas.</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Critério</th>
-                                <th scope="col">Bootstrap 5.3.8</th>
-                                <th scope="col">Foundation 6.9.0</th>
-                                <th scope="col">W3.CSS 4</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">KB transferidos (CSS minificado)</th>
-                                <td>23,3 kB</td>
-                                <td>14,6 kB</td>
-                                <td>5,8 kB</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Linhas de código HTML do componente</th>
-                                <td>7</td>
-                                <td>5</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Linhas de código CSS de personalização</th>
-                                <td>12 linhas</td>
-                                <td>0 linhas</td>
-                                <td>0 linhas</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Documentação e comunidade</th>
-                                <td><a href="https://getbootstrap.com/docs/5.3/components/card/">Card</a> e <a href="https://getbootstrap.com/docs/5.3/components/buttons/">botões</a></td>
-                                <td><a href="https://get.foundation/sites/docs/callout.html">Callout</a> e <a href="https://get.foundation/sites/docs/button.html">botões</a></td>
-                                <td><a href="https://www.w3schools.com/w3css/w3css_cards.asp">Cartões</a> e <a href="https://www.w3schools.com/w3css/w3css_buttons.asp">botões</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Personalização de tema</th>
-                                <td>Variáveis CSS do botão e regras próprias para o cartão.</td>
-                                <td>Configuração com Sass e regras CSS que alteram os estilos compilados.</td>
-                                <td>Classes de cor e de espaçamento, combináveis com folhas de tema ou CSS próprio.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Acessibilidade por defeito (apreciação qualitativa)</th>
-                                <td>A ligação tem texto explícito. O contraste de 4,50:1 em repouso atinge o limiar para texto normal.</td>
-                                <td>A ligação tem texto explícito. O contraste de 4,65:1 em repouso atinge o limiar para texto normal.</td>
-                                <td>A ligação tem texto explícito. O contraste de 3,67:1 em repouso fica abaixo do limiar para texto normal.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-            <section aria-labelledby="metodo-medicao">
-                <h2 id="metodo-medicao">Método de comparação</h2>
-                <ol>
-                    <li><strong>Transferência de CSS.</strong> No Chrome DevTools, abriu-se o separador Network, ativou-se Disable cache e recarregou-se a página com o filtro CSS. Registou-se a coluna Size para bootstrap.min.css, foundation.min.css e w3.css. As folhas de estilo próprias do PetCare foram excluídas.</li>
-                    <li><strong>Linhas de HTML.</strong> Contou-se o cartão desde a abertura até ao fecho do seu contentor. Cada contentor abre e fecha em linhas separadas. O título, o parágrafo e a ligação ocupam uma linha cada. Excluíram-se linhas vazias, o documento envolvente e o iframe.</li>
-                    <li><strong>CSS próprio.</strong> Contaram-se as linhas não vazias das regras de <code>bootstrap-custom.css</code> nos seletores específicos do cartão ou do botão. Cada uma das três regras (<code>.card</code>, <code>.btn-primary</code> e <code>.btn-primary:hover</code>) ocupa quatro linhas: a abertura com o seletor, duas declarações e o fecho. Nos exemplos Foundation e W3.CSS só se ajustou o corpo do documento. Excluíram-se os comentários, o CSS da framework, os estilos inline e as regras gerais da página.</li>
-                    <li><strong>Documentação e comunidade.</strong> Verificou-se se existiam exemplos públicos do cartão e do botão. As ligações na tabela remetem para a documentação consultada. A dimensão das comunidades não foi medida.</li>
-                    <li><strong>Personalização de tema.</strong> Identificaram-se os mecanismos disponíveis para alterar as cores e o aspeto do cartão.</li>
-                    <li><strong>Acessibilidade por defeito.</strong> Verificou-se no HTML que as três ligações têm o texto «Fazer marcação». Recolheram-se das folhas de estilo as cores do texto e do fundo da ligação em repouso, antes das personalizações PetCare. Calculou-se o rácio WCAG entre as luminâncias relativas. Para o limiar de 4,5:1 do texto normal, Bootstrap e Foundation atingem o valor exigido e a combinação branca sobre <code>w3-teal</code> fica abaixo. O cálculo abrange apenas estas combinações de cores.</li>
-                </ol>
-            </section>
-        </main>
+<section aria-labelledby="tabela-comparativa">
+<h2 id="tabela-comparativa">Tabela comparativa</h2>
+<div class="table-responsive"><table class="table table-striped">
+<caption>Medições do cartão com personalização mínima.</caption>
+<thead><tr><th scope="col">Critério</th><th scope="col">Bootstrap</th><th scope="col">Foundation</th><th scope="col">W3.CSS</th></tr></thead>
+<tbody><tr><th scope="row">Linhas HTML do cartão</th><td>7</td><td>5</td><td>5</td></tr>
+<tr><th scope="row">Linhas CSS próprio</th><td>12</td><td>9</td><td>11</td></tr>
+<tr><th scope="row">Declarações CSS próprias</th><td>6</td><td>3</td><td>5</td></tr>
+<tr><th scope="row">Regras CSS próprias</th><td>3</td><td>3</td><td>3</td></tr>
+<tr><th scope="row">Contraste do botão em repouso</th><td>6,30:1</td><td>6,30:1</td><td>6,30:1</td></tr>
+<tr><th scope="row">Estrutura visual mantida</th><td>Card com corpo interno</td><td>Callout cinzento</td><td>Cartão com sombra</td></tr>
+</tbody></table></div></section>
+<section><h2>Método e decisão</h2>
+<p>O mesmo conteúdo e ação são implementados nas três frameworks. O objetivo comum é aplicar as cores PetCare ao botão (normal e hover) e um contorno suave ao cartão, preservando a tipografia, espaçamentos, sombras e geometria nativos. O Bootstrap mantém as três regras originais da E7, incluindo os cantos arredondados.</p>
+<p>Contaram-se as linhas HTML do cartão e as linhas não vazias, declarações terminadas por ponto e vírgula e regras de cada ficheiro CSS próprio. Excluiu-se demo.css, que prepara o documento e o tema escuro. O contraste em repouso foi calculado pela fórmula WCAG para branco sobre #176B66. Não foram medidas a transferência de rede nem a acessibilidade global nesta revisão.</p>
+<p>O Foundation usa um callout com fundo cinzento; o W3.CSS conserva a sombra do cartão; o Bootstrap conserva o corpo interno e os cantos arredondados. As contagens refletem esta personalização parcial, não a reprodução de um resultado visual idêntico. O Bootstrap mantém-se como framework do sítio por já estar integrado nas grelhas, formulários e tabelas.</p>
+<p>Documentação: <a href="https://getbootstrap.com/docs/5.3/components/card/">Bootstrap</a>, <a href="https://get.foundation/sites/docs/callout.html">Foundation</a> e <a href="https://www.w3schools.com/w3css/w3css_cards.asp">W3.CSS</a>.</p></section></main>
             
                     <footer>
                         <p>© 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
@@ -156,42 +84,6 @@
                         </p>
                     </footer>
             
-                    <script>
-                        const botaoMenu = document.querySelector(".botao-menu");
-                        const menuPrincipal = document.querySelector("#menu-principal");
-            
-                        if (botaoMenu && menuPrincipal) {
-                            function fecharMenu() {
-                                menuPrincipal.classList.remove("menu-aberto");
-                                botaoMenu.setAttribute("aria-expanded", "false");
-                                botaoMenu.setAttribute("aria-label", "Abrir menu de navegação");
-                                botaoMenu.textContent = "☰";
-                            }
-            
-                            botaoMenu.addEventListener("click", function () {
-                                const aberto = menuPrincipal.classList.toggle("menu-aberto");
-                                botaoMenu.setAttribute("aria-expanded", String(aberto));
-                                botaoMenu.setAttribute(
-                                    "aria-label",
-                                    aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
-                                );
-                                botaoMenu.textContent = aberto ? "✕" : "☰";
-                            });
-            
-                            document.addEventListener("click", function (evento) {
-                                const clicouNoMenu = menuPrincipal.contains(evento.target);
-                                const clicouNoBotao = botaoMenu.contains(evento.target);
-                                if (!clicouNoMenu && !clicouNoBotao) {
-                                    fecharMenu();
-                                }
-                            });
-            
-                            document.addEventListener("keydown", function (evento) {
-                                if (evento.key === "Escape") {
-                                    fecharMenu();
-                                }
-                            });
-                        }
-                    </script>
+                    
                 </body>
             </html>
