@@ -2,6 +2,7 @@
 
 <html lang="pt">
     <head>
+    <link rel="icon" href="data:,">
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Artigo da PetCare sobre os contributos da Inteligência Artificial para a acessibilidade Web." name="description">
@@ -12,7 +13,9 @@
         <link href="style.css" rel="stylesheet">
         <!-- Personalizações do projeto -->
         <link href="bootstrap-custom.css" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="e8.css?v=7">
+<script src="petcare.js?v=3" defer></script>
+</head>
     <body>
         <header class="cabecalho-site">
             <div class="identidade-site">
@@ -42,7 +45,8 @@
                     <li><a href="comparacao.html">Comparação</a></li>
                 </ul>
             </nav>
-        </header>
+        <button type="button" id="tema" aria-pressed="false" hidden>Versão noturna</button>
+</header>
         <main class="pagina-artigo">
             <article>
                 <header class="cabecalho-pagina">
@@ -66,6 +70,7 @@
                         <li><a href="#limites">Limitações, riscos e supervisão humana</a></li>
                         <li><a href="#conclusoes">Conclusões finais</a></li>
                         <li><a href="#referencias">Referências</a></li>
+                        <li><a href="#declaracao-ia">Declaração de Uso de Inteligência Artificial</a></li>
                     </ol>
                 </nav>
                 <section id="introducao">
@@ -130,7 +135,7 @@
                     <p>Assim, os resultados gerados devem ser revistos por uma pessoa e complementados com testes e ferramentas de avaliação de acessibilidade. A utilização de IA constitui um apoio ao processo, não uma garantia de que um website cumpre os requisitos de acessibilidade.</p>
                 </section>
                 <section id="conclusoes">
-                    <h2>Conclusões finais</h2>
+                    <h2>5. Conclusões finais</h2>
                     <p>Nas cinco imagens do PetCare, o Gemini identificou os elementos principais e produziu sugestões de texto alternativo com uma média de 4,96 em 5 na grelha do grupo. A fotografia do cão no relvado ilustra o valor da revisão humana: a descrição indicava que o cão avançava, mas caracterizava o movimento de forma genérica.</p>
                     <p>Para o PetCare, a aplicação mais útil da IA foi fornecer uma primeira descrição que a equipa pôde comparar com a fotografia e adaptar à finalidade da página. O estudo avaliou a qualidade dessas cinco sugestões. Uma avaliação mais ampla do sítio exige também verificar a navegação por teclado, a leitura dos conteúdos com tecnologias de apoio e o contraste.</p>
                 </section>
@@ -184,58 +189,38 @@
                         </li>
                     </ol>
                 </section>
+            <section id="declaracao-ia">
+            <h2>7. Declaração de Uso de Inteligência Artificial</h2>
+
+            <p>
+                No âmbito da elaboração do presente artigo e do desenvolvimento 
+                do projeto associado na unidade curricular de 
+                <strong>Programação Web — Cliente</strong> (Licenciatura em 
+                Engenharia Informática, ISLA — Instituto Politécnico de Gestão 
+                e Tecnologia), os autores declaram que utilizaram ferramentas 
+                de Inteligência Artificial generativa — nomeadamente 
+                <strong>ChatGPT</strong> (OpenAI) e <strong>Gemini</strong> 
+                (Google) — exclusivamente como apoio complementar à obtenção 
+                e organização de informação, clarificação de conceitos técnicos, 
+                revisão linguística e exploração de exemplos práticos no âmbito 
+                da experiência descrita no trabalho.
+            </p>
+
+            <p>
+                Todas as informações obtidas foram criticamente analisadas, 
+                validadas face a fontes científicas e técnicas de referência 
+                (como as diretrizes do W3C/WCAG) e adaptadas pelos autores, 
+                que assumem integralmente a responsabilidade científica, técnica 
+                e académica pelo conteúdo final apresentado.
+            </p>
+        </section>
             </article>
         </main>
         <footer>
             <p>© 2026 PetCare ISLA Gaia. Todos os direitos reservados.</p>
             <p> <a href="contactos.html">Contactos</a> | <a href="acessibilidade.html">Declaração de Acessibilidade</a> </p>
         </footer>
-<script>
-    const botaoMenu = document.querySelector(".botao-menu");
-    const menuPrincipal = document.querySelector("#menu-principal");
 
-    if (botaoMenu && menuPrincipal) {
-
-        function fecharMenu() {
-            menuPrincipal.classList.remove("menu-aberto");
-            botaoMenu.setAttribute("aria-expanded", "false");
-            botaoMenu.setAttribute(
-                "aria-label",
-                "Abrir menu de navegação"
-            );
-            botaoMenu.textContent = "☰";
-        }
-
-        // Abrir e fechar ao clicar no botão
-        botaoMenu.addEventListener("click", function () {
-            const aberto = menuPrincipal.classList.toggle("menu-aberto");
-
-            botaoMenu.setAttribute("aria-expanded", String(aberto));
-            botaoMenu.setAttribute(
-                "aria-label",
-                aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
-            );
-            botaoMenu.textContent = aberto ? "✕" : "☰";
-        });
-
-        // Fechar ao clicar fora do menu e do botão
-        document.addEventListener("click", function (evento) {
-            const clicouNoMenu = menuPrincipal.contains(evento.target);
-            const clicouNoBotao = botaoMenu.contains(evento.target);
-
-            if (!clicouNoMenu && !clicouNoBotao) {
-                fecharMenu();
-            }
-        });
-
-        // Fechar ao carregar na tecla Escape
-        document.addEventListener("keydown", function (evento) {
-            if (evento.key === "Escape") {
-                fecharMenu();
-            }
-        });
-    }
-</script>
         
     </body>
 </html>
