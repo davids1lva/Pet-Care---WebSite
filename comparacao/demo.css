@@ -1,0 +1,6 @@
+body { margin: 0; padding: 6px; background: transparent; }
+.demo-titulo { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+html.tema-escuro { color-scheme: dark; }
+html.tema-escuro body { color: #e4eeeb; }
+html.tema-escuro .exemplo { background-color: #202e32 !important; color: #e4eeeb !important; border-color: #45605f; }
+html.tema-escuro .exemplo a:focus-visible { outline: 3px solid #81d1c1; outline-offset: 3px; }
