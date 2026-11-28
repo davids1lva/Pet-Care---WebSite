@@ -2,6 +2,7 @@
 
 <html lang="pt">
     <head>
+    <link rel="icon" href="data:,">
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Entre em contacto com a equipa da PetCare em Vila Nova de Gaia. Envie-nos uma mensagem ou visite-nos." name="description">
@@ -16,7 +17,9 @@
 
 <!-- Personalizações da E6 -->
 <link href="bootstrap-custom.css" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="e8.css?v=7">
+<script src="petcare.js?v=5" defer></script>
+</head>
     <body>
         <header class="cabecalho-site">
             <div class="identidade-site">
@@ -48,7 +51,8 @@
     </ul>
 </nav>
 
-        </header>
+        <button type="button" id="tema" aria-pressed="false" hidden>Versão noturna</button>
+</header>
         <main class="pagina-contactos">
             <section class="cabecalho-pagina">
                 <h1>Fale Connosco</h1>
@@ -98,7 +102,10 @@
             </section>
             <section class="seccao-formulario">
                 <h2>Enviar Mensagem</h2>
-                <form action="#" method="post">
+                <form id="form-contacto" action="#" method="post">
+<p>Os campos com * são obrigatórios.</p>
+<div id="erros-form" role="alert" hidden></div>
+<p id="resultado-form" role="status" hidden></p>
                     <p class="campo-formulario">
                         <label for="nome">Nome Completo *</label>
                         <br>
@@ -122,12 +129,13 @@
                             <option value="hotel">Hotel para Animais</option>
                             <option value="banho">Banho e Tosquia</option>
                             <option value="passeio">Passeios</option>
+                            <option value="duvidas">Esclarecimento de dúvidas</option>
                         </select>
                     </p>
-                    <p class="campo-formulario">
-                        <label for="data">Data Pretendida</label>
+                    <p class="campo-formulario" id="campo-data">
+                        <label for="data">Data Pretendida *</label>
                         <br>
-                        <input class="form-control" id="data" min="2026-10-22" name="data" type="date">
+                        <input class="form-control" id="data" name="data" type="date" required>
                     </p>
                     <p class="campo-mensagem">
                         <label for="mensagem">Mensagem *</label>
@@ -147,52 +155,7 @@
             <p> <a href="contactos.html">Contactos</a> | <a href="acessibilidade.html">Declara&ccedil;&atilde;o de Acessibilidade</a> </p>
         </footer>
         
-<script>
-    const botaoMenu = document.querySelector(".botao-menu");
-    const menuPrincipal = document.querySelector("#menu-principal");
 
-    if (botaoMenu && menuPrincipal) {
-
-        function fecharMenu() {
-            menuPrincipal.classList.remove("menu-aberto");
-            botaoMenu.setAttribute("aria-expanded", "false");
-            botaoMenu.setAttribute(
-                "aria-label",
-                "Abrir menu de navegação"
-            );
-            botaoMenu.textContent = "☰";
-        }
-
-        // Abrir e fechar ao clicar no botão
-        botaoMenu.addEventListener("click", function () {
-            const aberto = menuPrincipal.classList.toggle("menu-aberto");
-
-            botaoMenu.setAttribute("aria-expanded", String(aberto));
-            botaoMenu.setAttribute(
-                "aria-label",
-                aberto ? "Fechar menu de navegação" : "Abrir menu de navegação"
-            );
-            botaoMenu.textContent = aberto ? "✕" : "☰";
-        });
-
-        // Fechar ao clicar fora do menu e do botão
-        document.addEventListener("click", function (evento) {
-            const clicouNoMenu = menuPrincipal.contains(evento.target);
-            const clicouNoBotao = botaoMenu.contains(evento.target);
-
-            if (!clicouNoMenu && !clicouNoBotao) {
-                fecharMenu();
-            }
-        });
-
-        // Fechar ao carregar na tecla Escape
-        document.addEventListener("keydown", function (evento) {
-            if (evento.key === "Escape") {
-                fecharMenu();
-            }
-        });
-    }
-</script>
 
     </body>
 </html>
